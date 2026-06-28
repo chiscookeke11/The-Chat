@@ -1,0 +1,27 @@
+/* [project]/Desktop/my-learning/theChat/thechat/frontend/src/app/agrandir_49aa7700.module.css [app-client] (css) */
+@font-face {
+  font-family: agrandir;
+  src: url("../media/Agrandir_Regular-s.p.7f5f1de7.otf") format("opentype");
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: agrandir Fallback;
+  src: local(Arial);
+  ascent-override: 70.34%;
+  descent-override: 23.45%;
+  line-gap-override: 28.14%;
+  size-adjust: 106.63%;
+}
+
+.agrandir_49aa7700-module__68TxJa__className {
+  font-family: agrandir, agrandir Fallback;
+}
+
+.agrandir_49aa7700-module__68TxJa__variable {
+  --font-agrandir: "agrandir", "agrandir Fallback";
+}
+
+/*# sourceMappingURL=303fa_theChat_thechat_frontend_src_app_agrandir_49aa7700_module_css_bad6b30c._.single.css.map*/

@@ -1,0 +1,20 @@
+(globalThis.TURBOPACK_CHUNK_LISTS || (globalThis.TURBOPACK_CHUNK_LISTS = [])).push({
+    script: typeof document === "object" ? document.currentScript : undefined,
+    chunks: [
+  "static/chunks/deb80_next_dist_compiled_next-devtools_index_f0e26937.js",
+  "static/chunks/deb80_next_dist_compiled_091f119b._.js",
+  "static/chunks/deb80_next_dist_shared_lib_faaab783._.js",
+  "static/chunks/deb80_next_dist_client_8e02a64a._.js",
+  "static/chunks/deb80_next_dist_b52da8b5._.js",
+  "static/chunks/deb80_next_b64dfa0e._.js",
+  "static/chunks/[next]_entry_page-loader_ts_068d96dc._.js",
+  "static/chunks/deb80_react-dom_1337658c._.js",
+  "static/chunks/deb80_@sentry_core_build_esm_46a06d4f._.js",
+  "static/chunks/deb80_@sentry_browser_build_npm_esm_dev_2030db9b._.js",
+  "static/chunks/deb80_@sentry_browser-utils_build_esm_e751ccf1._.js",
+  "static/chunks/deb80_@sentry_replay_build_npm_esm_index_6e1a4e5c.js",
+  "static/chunks/deb80_fc0ecaa4._.js",
+  "static/chunks/[root-of-the-server]__a1fe5c9d._.js"
+],
+    source: "entry"
+});

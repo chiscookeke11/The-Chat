@@ -23,21 +23,9 @@
 
 @layer theme {
   :root, :host {
-    --color-amber-700: #b75000;
     --default-font-family: var(--font-geist-sans);
     --default-mono-font-family: var(--font-geist-mono);
-  }
-
-  @supports (color: color(display-p3 0 0 0)) {
-    :root, :host {
-      --color-amber-700: color(display-p3 .67989 .32771 .0520514);
-    }
-  }
-
-  @supports (color: lab(0% 0 0)) {
-    :root, :host {
-      --color-amber-700: lab(47.2709% 42.9082 69.2966);
-    }
+    --font-agrandir: var(--font-agrandir);
   }
 }
 
@@ -410,8 +398,8 @@
     border-width: 1px;
   }
 
-  .bg-amber-700 {
-    background-color: var(--color-amber-700);
+  .font-agrandir {
+    font-family: var(--font-agrandir);
   }
 
   .antialiased {
