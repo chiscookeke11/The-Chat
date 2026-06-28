@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 3, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
+    {"offset": {"line": 235, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/USER/Desktop/my-learning/theChat/thechat/frontend/src/app/api/sentry-example-api/route.ts"],"sourcesContent":["import * as Sentry from \"@sentry/nextjs\";\nexport const dynamic = \"force-dynamic\";\n\nclass SentryExampleAPIError extends Error {\n  constructor(message: string | undefined) {\n    super(message);\n    this.name = \"SentryExampleAPIError\";\n  }\n}\n\n// A faulty API route to test Sentry's error monitoring\nexport function GET() {\n  Sentry.logger.info(\"Sentry example API called\");\n  throw new SentryExampleAPIError(\n    \"This error is raised on the backend called by the example page.\",\n  );\n}\n"],"names":[],"mappings":";;;;;;AAAA;;AACO,MAAM,UAAU;AAEvB,MAAM,8BAA8B;IAClC,YAAY,OAA2B,CAAE;QACvC,KAAK,CAAC;QACN,IAAI,CAAC,IAAI,GAAG;IACd;AACF;AAGO,SAAS;IACd,gPAAa,CAAC,IAAI,CAAC;IACnB,MAAM,IAAI,sBACR;AAEJ","debugId":null}}]
+}

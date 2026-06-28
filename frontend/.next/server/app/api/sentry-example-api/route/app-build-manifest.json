@@ -1,0 +1,22 @@
+{
+  "pages": {
+    "/api/sentry-example-api/route": [
+      "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_38ca27c4._.js",
+      "static/chunks/deb80_next_dist_compiled_react-dom_c24a983b._.js",
+      "static/chunks/deb80_next_dist_compiled_next-devtools_index_ac117983.js",
+      "static/chunks/deb80_next_dist_compiled_c6e9e391._.js",
+      "static/chunks/deb80_next_dist_client_962bb662._.js",
+      "static/chunks/deb80_next_dist_shared_lib_7852a690._.js",
+      "static/chunks/deb80_next_dist_44c1f34d._.js",
+      "static/chunks/deb80_next_router_9fc731a2.js",
+      "static/chunks/deb80_@sentry_core_build_esm_416f35b4._.js",
+      "static/chunks/deb80_@sentry_browser_build_npm_esm_dev_930b02dd._.js",
+      "static/chunks/deb80_@sentry_browser-utils_build_esm_53f8723d._.js",
+      "static/chunks/deb80_@sentry_replay_build_npm_esm_index_428cba28.js",
+      "static/chunks/deb80_4601c986._.js",
+      "static/chunks/3d860_my-learning_theChat_thechat_frontend_src_instrumentation-client_ts_16926394._.js",
+      "static/chunks/Desktop_my-learning_theChat_thechat_frontend_a0ff3932._.js",
+      "static/chunks/turbopack-Desktop_my-learning_theChat_thechat_frontend_a40aed42._.js"
+    ]
+  }
+}

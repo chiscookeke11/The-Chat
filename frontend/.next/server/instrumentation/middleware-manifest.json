@@ -1,0 +1,17 @@
+{
+  "sorted_middleware": [],
+  "middleware": {},
+  "instrumentation": {
+    "files": [
+      "server/edge/chunks/deb80_@sentry_core_build_esm_2efc4ec9._.js",
+      "server/edge/chunks/deb80_@sentry_conventions_dist_attributes_mjs_ddaa2cbb._.js",
+      "server/edge/chunks/deb80_@sentry_opentelemetry_build_esm_resource-DazDAxCp_00fb5990.js",
+      "server/edge/chunks/deb80_@sentry_vercel-edge_build_esm_index_d6f7bde5.js",
+      "server/edge/chunks/deb80_d25947f1._.js",
+      "server/edge/chunks/[root-of-the-server]__90d33e44._.js",
+      "server/edge/chunks/turbopack-Desktop_my-learning_theChat_thechat_frontend_edge-wrapper_b49d623b.js"
+    ],
+    "name": "instrumentation"
+  },
+  "functions": {}
+}
