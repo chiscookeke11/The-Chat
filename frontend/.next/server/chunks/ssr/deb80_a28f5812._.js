@@ -1,5 +1,60 @@
-(globalThis.TURBOPACK || (globalThis.TURBOPACK = [])).push([typeof document === "object" ? document.currentScript : undefined,
-"[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/shared/lib/side-effect.js [app-client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+module.exports = [
+"[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/@swc/helpers/cjs/_interop_require_default.cjs [app-ssr] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"use strict";
+
+function _interop_require_default(obj) {
+    return obj && obj.__esModule ? obj : {
+        default: obj
+    };
+}
+exports._ = _interop_require_default;
+}),
+"[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/@swc/helpers/cjs/_interop_require_wildcard.cjs [app-ssr] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"use strict";
+
+function _getRequireWildcardCache(nodeInterop) {
+    if (typeof WeakMap !== "function") return null;
+    var cacheBabelInterop = new WeakMap();
+    var cacheNodeInterop = new WeakMap();
+    return (_getRequireWildcardCache = function(nodeInterop) {
+        return nodeInterop ? cacheNodeInterop : cacheBabelInterop;
+    })(nodeInterop);
+}
+function _interop_require_wildcard(obj, nodeInterop) {
+    if (!nodeInterop && obj && obj.__esModule) return obj;
+    if (obj === null || typeof obj !== "object" && typeof obj !== "function") return {
+        default: obj
+    };
+    var cache = _getRequireWildcardCache(nodeInterop);
+    if (cache && cache.has(obj)) return cache.get(obj);
+    var newObj = {
+        __proto__: null
+    };
+    var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor;
+    for(var key in obj){
+        if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) {
+            var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null;
+            if (desc && (desc.get || desc.set)) Object.defineProperty(newObj, key, desc);
+            else newObj[key] = obj[key];
+        }
+    }
+    newObj.default = obj;
+    if (cache) cache.set(obj, newObj);
+    return newObj;
+}
+exports._ = _interop_require_wildcard;
+}),
+"[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-runtime.js [app-ssr] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"use strict";
+
+module.exports = __turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/server/route-modules/app-page/module.compiled.js [app-ssr] (ecmascript)").vendored['react-ssr'].ReactJsxRuntime; //# sourceMappingURL=react-jsx-runtime.js.map
+}),
+"[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-dom.js [app-ssr] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"use strict";
+
+module.exports = __turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/server/route-modules/app-page/module.compiled.js [app-ssr] (ecmascript)").vendored['react-ssr'].ReactDOM; //# sourceMappingURL=react-dom.js.map
+}),
+"[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/shared/lib/side-effect.js [app-ssr] (ecmascript)", ((__turbopack_context__, module, exports) => {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -11,10 +66,10 @@ Object.defineProperty(exports, "default", {
         return SideEffect;
     }
 });
-const _react = __turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
-const isServer = typeof window === 'undefined';
-const useClientOnlyLayoutEffect = isServer ? ()=>{} : _react.useLayoutEffect;
-const useClientOnlyEffect = isServer ? ()=>{} : _react.useEffect;
+const _react = __turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+const isServer = "undefined" === 'undefined';
+const useClientOnlyLayoutEffect = ("TURBOPACK compile-time truthy", 1) ? ()=>{} : "TURBOPACK unreachable";
+const useClientOnlyEffect = ("TURBOPACK compile-time truthy", 1) ? ()=>{} : "TURBOPACK unreachable";
 function SideEffect(props) {
     const { headManager, reduceComponentsToState } = props;
     function emitChange() {
@@ -23,83 +78,60 @@ function SideEffect(props) {
             headManager.updateHead(reduceComponentsToState(headElements, props));
         }
     }
-    if (isServer) {
+    if ("TURBOPACK compile-time truthy", 1) {
         var _headManager_mountedInstances;
         headManager == null ? void 0 : (_headManager_mountedInstances = headManager.mountedInstances) == null ? void 0 : _headManager_mountedInstances.add(props.children);
         emitChange();
     }
-    useClientOnlyLayoutEffect({
-        "SideEffect.useClientOnlyLayoutEffect": ()=>{
+    useClientOnlyLayoutEffect(()=>{
+        var _headManager_mountedInstances;
+        headManager == null ? void 0 : (_headManager_mountedInstances = headManager.mountedInstances) == null ? void 0 : _headManager_mountedInstances.add(props.children);
+        return ()=>{
             var _headManager_mountedInstances;
-            headManager == null ? void 0 : (_headManager_mountedInstances = headManager.mountedInstances) == null ? void 0 : _headManager_mountedInstances.add(props.children);
-            return ({
-                "SideEffect.useClientOnlyLayoutEffect": ()=>{
-                    var _headManager_mountedInstances;
-                    headManager == null ? void 0 : (_headManager_mountedInstances = headManager.mountedInstances) == null ? void 0 : _headManager_mountedInstances.delete(props.children);
-                }
-            })["SideEffect.useClientOnlyLayoutEffect"];
-        }
-    }["SideEffect.useClientOnlyLayoutEffect"]);
+            headManager == null ? void 0 : (_headManager_mountedInstances = headManager.mountedInstances) == null ? void 0 : _headManager_mountedInstances.delete(props.children);
+        };
+    });
     // We need to call `updateHead` method whenever the `SideEffect` is trigger in all
     // life-cycles: mount, update, unmount. However, if there are multiple `SideEffect`s
     // being rendered, we only trigger the method from the last one.
     // This is ensured by keeping the last unflushed `updateHead` in the `_pendingUpdate`
     // singleton in the layout effect pass, and actually trigger it in the effect pass.
-    useClientOnlyLayoutEffect({
-        "SideEffect.useClientOnlyLayoutEffect": ()=>{
+    useClientOnlyLayoutEffect(()=>{
+        if (headManager) {
+            headManager._pendingUpdate = emitChange;
+        }
+        return ()=>{
             if (headManager) {
                 headManager._pendingUpdate = emitChange;
             }
-            return ({
-                "SideEffect.useClientOnlyLayoutEffect": ()=>{
-                    if (headManager) {
-                        headManager._pendingUpdate = emitChange;
-                    }
-                }
-            })["SideEffect.useClientOnlyLayoutEffect"];
+        };
+    });
+    useClientOnlyEffect(()=>{
+        if (headManager && headManager._pendingUpdate) {
+            headManager._pendingUpdate();
+            headManager._pendingUpdate = null;
         }
-    }["SideEffect.useClientOnlyLayoutEffect"]);
-    useClientOnlyEffect({
-        "SideEffect.useClientOnlyEffect": ()=>{
+        return ()=>{
             if (headManager && headManager._pendingUpdate) {
                 headManager._pendingUpdate();
                 headManager._pendingUpdate = null;
             }
-            return ({
-                "SideEffect.useClientOnlyEffect": ()=>{
-                    if (headManager && headManager._pendingUpdate) {
-                        headManager._pendingUpdate();
-                        headManager._pendingUpdate = null;
-                    }
-                }
-            })["SideEffect.useClientOnlyEffect"];
-        }
-    }["SideEffect.useClientOnlyEffect"]);
+        };
+    });
     return null;
 } //# sourceMappingURL=side-effect.js.map
 }),
-"[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/shared/lib/amp-context.shared-runtime.js [app-client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/server/route-modules/app-page/vendored/contexts/amp-context.js [app-ssr] (ecmascript)", ((__turbopack_context__, module, exports) => {
 "use strict";
 
-var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f$theChat$2f$thechat$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = /*#__PURE__*/ __turbopack_context__.i("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/build/polyfills/process.js [app-client] (ecmascript)");
-"use strict";
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-Object.defineProperty(exports, "AmpStateContext", {
-    enumerable: true,
-    get: function() {
-        return AmpStateContext;
-    }
-});
-const _interop_require_default = __turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/@swc/helpers/cjs/_interop_require_default.cjs [app-client] (ecmascript)");
-const _react = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)"));
-const AmpStateContext = _react.default.createContext({});
-if ("TURBOPACK compile-time truthy", 1) {
-    AmpStateContext.displayName = 'AmpStateContext';
-} //# sourceMappingURL=amp-context.shared-runtime.js.map
+module.exports = __turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/server/route-modules/app-page/module.compiled.js [app-ssr] (ecmascript)").vendored['contexts'].AmpContext; //# sourceMappingURL=amp-context.js.map
 }),
-"[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/shared/lib/amp-mode.js [app-client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/server/route-modules/app-page/vendored/contexts/head-manager-context.js [app-ssr] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"use strict";
+
+module.exports = __turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/server/route-modules/app-page/module.compiled.js [app-ssr] (ecmascript)").vendored['contexts'].HeadManagerContext; //# sourceMappingURL=head-manager-context.js.map
+}),
+"[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/shared/lib/amp-mode.js [app-ssr] (ecmascript)", ((__turbopack_context__, module, exports) => {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -116,12 +148,32 @@ function isInAmpMode(param) {
     return ampFirst || hybrid && hasQuery;
 } //# sourceMappingURL=amp-mode.js.map
 }),
-"[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/shared/lib/head.js [app-client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/shared/lib/utils/warn-once.js [app-ssr] (ecmascript)", ((__turbopack_context__, module, exports) => {
 "use strict";
 
-var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f$theChat$2f$thechat$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = /*#__PURE__*/ __turbopack_context__.i("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/build/polyfills/process.js [app-client] (ecmascript)");
-'use client';
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+Object.defineProperty(exports, "warnOnce", {
+    enumerable: true,
+    get: function() {
+        return warnOnce;
+    }
+});
+let warnOnce = (_)=>{};
+if ("TURBOPACK compile-time truthy", 1) {
+    const warnings = new Set();
+    warnOnce = (msg)=>{
+        if (!warnings.has(msg)) {
+            console.warn(msg);
+        }
+        warnings.add(msg);
+    };
+} //# sourceMappingURL=warn-once.js.map
+}),
+"[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/shared/lib/head.js [app-ssr] (ecmascript)", ((__turbopack_context__, module, exports) => {
 "use strict";
+
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
@@ -143,15 +195,15 @@ _export(exports, {
         return defaultHead;
     }
 });
-const _interop_require_default = __turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/@swc/helpers/cjs/_interop_require_default.cjs [app-client] (ecmascript)");
-const _interop_require_wildcard = __turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/@swc/helpers/cjs/_interop_require_wildcard.cjs [app-client] (ecmascript)");
-const _jsxruntime = __turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/compiled/react/jsx-runtime.js [app-client] (ecmascript)");
-const _react = /*#__PURE__*/ _interop_require_wildcard._(__turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)"));
-const _sideeffect = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/shared/lib/side-effect.js [app-client] (ecmascript)"));
-const _ampcontextsharedruntime = __turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/shared/lib/amp-context.shared-runtime.js [app-client] (ecmascript)");
-const _headmanagercontextsharedruntime = __turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/shared/lib/head-manager-context.shared-runtime.js [app-client] (ecmascript)");
-const _ampmode = __turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/shared/lib/amp-mode.js [app-client] (ecmascript)");
-const _warnonce = __turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/shared/lib/utils/warn-once.js [app-client] (ecmascript)");
+const _interop_require_default = __turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/@swc/helpers/cjs/_interop_require_default.cjs [app-ssr] (ecmascript)");
+const _interop_require_wildcard = __turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/@swc/helpers/cjs/_interop_require_wildcard.cjs [app-ssr] (ecmascript)");
+const _jsxruntime = __turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-runtime.js [app-ssr] (ecmascript)");
+const _react = /*#__PURE__*/ _interop_require_wildcard._(__turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)"));
+const _sideeffect = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/shared/lib/side-effect.js [app-ssr] (ecmascript)"));
+const _ampcontextsharedruntime = __turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/server/route-modules/app-page/vendored/contexts/amp-context.js [app-ssr] (ecmascript)");
+const _headmanagercontextsharedruntime = __turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/server/route-modules/app-page/vendored/contexts/head-manager-context.js [app-ssr] (ecmascript)");
+const _ampmode = __turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/shared/lib/amp-mode.js [app-ssr] (ecmascript)");
+const _warnonce = __turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/shared/lib/utils/warn-once.js [app-ssr] (ecmascript)");
 function defaultHead(inAmpMode) {
     if (inAmpMode === void 0) inAmpMode = false;
     const head = [
@@ -290,7 +342,7 @@ if ((typeof exports.default === 'function' || typeof exports.default === 'object
     module.exports = exports.default;
 } //# sourceMappingURL=head.js.map
 }),
-"[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/shared/lib/image-blur-svg.js [app-client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/shared/lib/image-blur-svg.js [app-ssr] (ecmascript)", ((__turbopack_context__, module, exports) => {
 "use strict";
 
 /**
@@ -314,7 +366,7 @@ function getImageBlurSvg(param) {
     return "%3Csvg xmlns='http://www.w3.org/2000/svg' " + viewBox + "%3E%3Cfilter id='b' color-interpolation-filters='sRGB'%3E%3CfeGaussianBlur stdDeviation='" + std + "'/%3E%3CfeColorMatrix values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 100 -1' result='s'/%3E%3CfeFlood x='0' y='0' width='100%25' height='100%25'/%3E%3CfeComposite operator='out' in='s'/%3E%3CfeComposite in2='SourceGraphic'/%3E%3CfeGaussianBlur stdDeviation='" + std + "'/%3E%3C/filter%3E%3Cimage width='100%25' height='100%25' x='0' y='0' preserveAspectRatio='" + preserveAspectRatio + "' style='filter: url(%23b);' href='" + blurDataURL + "'/%3E%3C/svg%3E";
 } //# sourceMappingURL=image-blur-svg.js.map
 }),
-"[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/shared/lib/image-config.js [app-client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/shared/lib/image-config.js [app-ssr] (ecmascript)", ((__turbopack_context__, module, exports) => {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -384,11 +436,9 @@ const imageConfigDefault = {
     unoptimized: false
 }; //# sourceMappingURL=image-config.js.map
 }),
-"[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/shared/lib/get-img-props.js [app-client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/shared/lib/get-img-props.js [app-ssr] (ecmascript)", ((__turbopack_context__, module, exports) => {
 "use strict";
 
-var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f$theChat$2f$thechat$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = /*#__PURE__*/ __turbopack_context__.i("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/build/polyfills/process.js [app-client] (ecmascript)");
-"use strict";
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
@@ -398,9 +448,9 @@ Object.defineProperty(exports, "getImgProps", {
         return getImgProps;
     }
 });
-const _warnonce = __turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/shared/lib/utils/warn-once.js [app-client] (ecmascript)");
-const _imageblursvg = __turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/shared/lib/image-blur-svg.js [app-client] (ecmascript)");
-const _imageconfig = __turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/shared/lib/image-config.js [app-client] (ecmascript)");
+const _warnonce = __turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/shared/lib/utils/warn-once.js [app-ssr] (ecmascript)");
+const _imageblursvg = __turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/shared/lib/image-blur-svg.js [app-ssr] (ecmascript)");
+const _imageconfig = __turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/shared/lib/image-config.js [app-ssr] (ecmascript)");
 const VALID_LOADING_VALUES = [
     'lazy',
     'eager',
@@ -827,29 +877,8 @@ function getImgProps(param, _state) {
                 (0, _warnonce.warnOnce)('Image with src "' + src + '" has legacy prop "' + legacyKey + '". Did you forget to run the codemod?' + "\nRead more: https://nextjs.org/docs/messages/next-image-upgrade-to-13");
             }
         }
-        if (typeof window !== 'undefined' && !perfObserver && window.PerformanceObserver) {
-            perfObserver = new PerformanceObserver((entryList)=>{
-                for (const entry of entryList.getEntries()){
-                    var _entry_element;
-                    // @ts-ignore - missing "LargestContentfulPaint" class with "element" prop
-                    const imgSrc = (entry == null ? void 0 : (_entry_element = entry.element) == null ? void 0 : _entry_element.src) || '';
-                    const lcpImage = allImgs.get(imgSrc);
-                    if (lcpImage && !lcpImage.priority && lcpImage.placeholder === 'empty' && !lcpImage.src.startsWith('data:') && !lcpImage.src.startsWith('blob:')) {
-                        // https://web.dev/lcp/#measure-lcp-in-javascript
-                        (0, _warnonce.warnOnce)('Image with src "' + lcpImage.src + '" was detected as the Largest Contentful Paint (LCP). Please add the "priority" property if this image is above the fold.' + "\nRead more: https://nextjs.org/docs/api-reference/next/image#priority");
-                    }
-                }
-            });
-            try {
-                perfObserver.observe({
-                    type: 'largest-contentful-paint',
-                    buffered: true
-                });
-            } catch (err) {
-                // Log error but don't crash the app
-                console.error(err);
-            }
-        }
+        if ("TURBOPACK compile-time falsy", 0) //TURBOPACK unreachable
+        ;
     }
     const imgStyle = Object.assign(fill ? {
         position: 'absolute',
@@ -899,19 +928,8 @@ function getImgProps(param, _state) {
         loader
     });
     if ("TURBOPACK compile-time truthy", 1) {
-        if (typeof window !== 'undefined') {
-            let fullUrl;
-            try {
-                fullUrl = new URL(imgAttributes.src);
-            } catch (e) {
-                fullUrl = new URL(imgAttributes.src, window.location.href);
-            }
-            allImgs.set(fullUrl.href, {
-                src,
-                priority,
-                placeholder
-            });
-        }
+        if ("TURBOPACK compile-time falsy", 0) //TURBOPACK unreachable
+        ;
     }
     const props = {
         ...rest,
@@ -941,31 +959,18 @@ function getImgProps(param, _state) {
     };
 } //# sourceMappingURL=get-img-props.js.map
 }),
-"[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/shared/lib/image-config-context.shared-runtime.js [app-client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/server/route-modules/app-page/vendored/contexts/image-config-context.js [app-ssr] (ecmascript)", ((__turbopack_context__, module, exports) => {
 "use strict";
 
-var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f$theChat$2f$thechat$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = /*#__PURE__*/ __turbopack_context__.i("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/build/polyfills/process.js [app-client] (ecmascript)");
-"use strict";
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-Object.defineProperty(exports, "ImageConfigContext", {
-    enumerable: true,
-    get: function() {
-        return ImageConfigContext;
-    }
-});
-const _interop_require_default = __turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/@swc/helpers/cjs/_interop_require_default.cjs [app-client] (ecmascript)");
-const _react = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)"));
-const _imageconfig = __turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/shared/lib/image-config.js [app-client] (ecmascript)");
-const ImageConfigContext = _react.default.createContext(_imageconfig.imageConfigDefault);
-if ("TURBOPACK compile-time truthy", 1) {
-    ImageConfigContext.displayName = 'ImageConfigContext';
-} //# sourceMappingURL=image-config-context.shared-runtime.js.map
+module.exports = __turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/server/route-modules/app-page/module.compiled.js [app-ssr] (ecmascript)").vendored['contexts'].ImageConfigContext; //# sourceMappingURL=image-config-context.js.map
 }),
-"[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/compiled/picomatch/index.js [app-client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/server/route-modules/app-page/vendored/contexts/router-context.js [app-ssr] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"use strict";
 
-var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f$theChat$2f$thechat$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = /*#__PURE__*/ __turbopack_context__.i("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/build/polyfills/process.js [app-client] (ecmascript)");
+module.exports = __turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/server/route-modules/app-page/module.compiled.js [app-ssr] (ecmascript)").vendored['contexts'].RouterContext; //# sourceMappingURL=router-context.js.map
+}),
+"[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/compiled/picomatch/index.js [app-ssr] (ecmascript)", ((__turbopack_context__, module, exports) => {
+
 (()=>{
     "use strict";
     var t = {
@@ -976,13 +981,12 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f
                     const t = navigator.platform.toLowerCase();
                     return t === "win32" || t === "windows";
                 }
-                if (typeof __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f$theChat$2f$thechat$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"] !== "undefined" && __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f$theChat$2f$thechat$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].platform) {
-                    return __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f$theChat$2f$thechat$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].platform === "win32";
+                if (typeof process !== "undefined" && process.platform) {
+                    return process.platform === "win32";
                 }
                 return false;
             };
-            function picomatch(t, e) {
-                let u = arguments.length > 2 && arguments[2] !== void 0 ? arguments[2] : false;
+            function picomatch(t, e, u = false) {
                 if (e && (e.windows === null || e.windows === undefined)) {
                     e = {
                         ...e,
@@ -996,22 +1000,22 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f
         },
         154: (t)=>{
             const e = "\\\\/";
-            const u = "[^".concat(e, "]");
+            const u = `[^${e}]`;
             const n = "\\.";
             const o = "\\+";
             const s = "\\?";
             const r = "\\/";
             const a = "(?=.)";
             const i = "[^/]";
-            const c = "(?:".concat(r, "|$)");
-            const p = "(?:^|".concat(r, ")");
-            const l = "".concat(n, "{1,2}").concat(c);
-            const f = "(?!".concat(n, ")");
-            const A = "(?!".concat(p).concat(l, ")");
-            const _ = "(?!".concat(n, "{0,1}").concat(c, ")");
-            const R = "(?!".concat(l, ")");
-            const E = "[^.".concat(r, "]");
-            const h = "".concat(i, "*?");
+            const c = `(?:${r}|$)`;
+            const p = `(?:^|${r})`;
+            const l = `${n}{1,2}${c}`;
+            const f = `(?!${n})`;
+            const A = `(?!${p}${l})`;
+            const _ = `(?!${n}{0,1}${c})`;
+            const R = `(?!${l})`;
+            const E = `[^.${r}]`;
+            const h = `${i}*?`;
             const g = "/";
             const b = {
                 DOT_LITERAL: n,
@@ -1033,17 +1037,17 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f
             };
             const C = {
                 ...b,
-                SLASH_LITERAL: "[".concat(e, "]"),
+                SLASH_LITERAL: `[${e}]`,
                 QMARK: u,
-                STAR: "".concat(u, "*?"),
-                DOTS_SLASH: "".concat(n, "{1,2}(?:[").concat(e, "]|$)"),
-                NO_DOT: "(?!".concat(n, ")"),
-                NO_DOTS: "(?!(?:^|[".concat(e, "])").concat(n, "{1,2}(?:[").concat(e, "]|$))"),
-                NO_DOT_SLASH: "(?!".concat(n, "{0,1}(?:[").concat(e, "]|$))"),
-                NO_DOTS_SLASH: "(?!".concat(n, "{1,2}(?:[").concat(e, "]|$))"),
-                QMARK_NO_DOT: "[^.".concat(e, "]"),
-                START_ANCHOR: "(?:^|[".concat(e, "])"),
-                END_ANCHOR: "(?:[".concat(e, "]|$)"),
+                STAR: `${u}*?`,
+                DOTS_SLASH: `${n}{1,2}(?:[${e}]|$)`,
+                NO_DOT: `(?!${n})`,
+                NO_DOTS: `(?!(?:^|[${e}])${n}{1,2}(?:[${e}]|$))`,
+                NO_DOT_SLASH: `(?!${n}{0,1}(?:[${e}]|$))`,
+                NO_DOTS_SLASH: `(?!${n}{1,2}(?:[${e}]|$))`,
+                QMARK_NO_DOT: `[^.${e}]`,
+                START_ANCHOR: `(?:^|[${e}])`,
+                END_ANCHOR: `(?:[${e}]|$)`,
                 SEP: "\\"
             };
             const y = {
@@ -1124,7 +1128,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f
                         "!": {
                             type: "negate",
                             open: "(?:(?!(?:",
-                            close: "))".concat(t.STAR, ")")
+                            close: `))${t.STAR})`
                         },
                         "?": {
                             type: "qmark",
@@ -1162,7 +1166,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f
                     return e.expandRange(...t, e);
                 }
                 t.sort();
-                const u = "[".concat(t.join("-"), "]");
+                const u = `[${t.join("-")}]`;
                 try {
                     new RegExp(u);
                 } catch (e) {
@@ -1170,7 +1174,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f
                 }
                 return u;
             };
-            const syntaxError = (t, e)=>"Missing ".concat(t, ': "').concat(e, '" - use "\\\\').concat(e, '" to match literal characters');
+            const syntaxError = (t, e)=>`Missing ${t}: "${e}" - use "\\\\${e}" to match literal characters`;
             const parse = (t, e)=>{
                 if (typeof t !== "string") {
                     throw new TypeError("Expected a string");
@@ -1182,7 +1186,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f
                 const p = typeof u.maxLength === "number" ? Math.min(s, u.maxLength) : s;
                 let l = t.length;
                 if (l > p) {
-                    throw new SyntaxError("Input length: ".concat(l, ", exceeds maximum allowed length: ").concat(p));
+                    throw new SyntaxError(`Input length: ${l}, exceeds maximum allowed length: ${p}`);
                 }
                 const f = {
                     type: "bos",
@@ -1196,12 +1200,12 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f
                 const R = n.globChars(u.windows);
                 const E = n.extglobChars(R);
                 const { DOT_LITERAL: h, PLUS_LITERAL: g, SLASH_LITERAL: b, ONE_CHAR: C, DOTS_SLASH: y, NO_DOT: $, NO_DOT_SLASH: x, NO_DOTS_SLASH: S, QMARK: H, QMARK_NO_DOT: v, STAR: d, START_ANCHOR: L } = R;
-                const globstar = (t)=>"(".concat(_, "(?:(?!").concat(L).concat(t.dot ? y : h, ").)*?)");
+                const globstar = (t)=>`(${_}(?:(?!${L}${t.dot ? y : h}).)*?)`;
                 const T = u.dot ? "" : $;
                 const O = u.dot ? H : v;
                 let k = u.bash === true ? globstar(u) : d;
                 if (u.capture) {
-                    k = "(".concat(k, ")");
+                    k = `(${k})`;
                 }
                 if (typeof u.noext === "boolean") {
                     u.noextglob = u.noext;
@@ -1231,14 +1235,10 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f
                 let B = f;
                 let G;
                 const eos = ()=>m.index === l - 1;
-                const D = m.peek = function() {
-                    let e = arguments.length > 0 && arguments[0] !== void 0 ? arguments[0] : 1;
-                    return t[m.index + e];
-                };
+                const D = m.peek = (e = 1)=>t[m.index + e];
                 const M = m.advance = ()=>t[++m.index] || "";
                 const remaining = ()=>t.slice(m.index + 1);
-                const consume = function() {
-                    let t = arguments.length > 0 && arguments[0] !== void 0 ? arguments[0] : "", e = arguments.length > 1 && arguments[1] !== void 0 ? arguments[1] : 0;
+                const consume = (t = "", e = 0)=>{
                     m.consumed += t;
                     m.index += e;
                 };
@@ -1326,14 +1326,14 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f
                             s = globstar(u);
                         }
                         if (s !== k || eos() || /^\)+$/.test(remaining())) {
-                            n = t.close = ")$))".concat(s);
+                            n = t.close = `)$))${s}`;
                         }
                         if (t.inner.includes("*") && (o = remaining()) && /^\.[^\\/.]+$/.test(o)) {
                             const u = parse(o, {
                                 ...e,
                                 fastpaths: false
                             }).output;
-                            n = t.close = ")".concat(u, ")").concat(s, ")");
+                            n = t.close = `)${u})${s})`;
                         }
                         if (t.prev.type === "bos") {
                             m.negatedExtglob = true;
@@ -1372,7 +1372,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f
                             }
                             return k;
                         }
-                        return e ? t : "\\".concat(t);
+                        return e ? t : `\\${t}`;
                     });
                     if (n === true) {
                         if (u.unescape === true) {
@@ -1454,10 +1454,10 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f
                             }
                         }
                         if (G === "[" && D() !== ":" || G === "-" && D() === "]") {
-                            G = "\\".concat(G);
+                            G = `\\${G}`;
                         }
                         if (G === "]" && (B.value === "[" || B.value === "[^")) {
-                            G = "\\".concat(G);
+                            G = `\\${G}`;
                         }
                         if (u.posix === true && G === "!" && B.value === "[") {
                             G = "^";
@@ -1516,7 +1516,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f
                             if (u.nobracket !== true && u.strictBrackets === true) {
                                 throw new SyntaxError(syntaxError("closing", "]"));
                             }
-                            G = "\\".concat(G);
+                            G = `\\${G}`;
                         } else {
                             increment("brackets");
                         }
@@ -1531,7 +1531,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f
                             push({
                                 type: "text",
                                 value: G,
-                                output: "\\".concat(G)
+                                output: `\\${G}`
                             });
                             continue;
                         }
@@ -1542,14 +1542,14 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f
                             push({
                                 type: "text",
                                 value: G,
-                                output: "\\".concat(G)
+                                output: `\\${G}`
                             });
                             continue;
                         }
                         decrement("brackets");
                         const t = B.value.slice(1);
                         if (B.posix !== true && t[0] === "^" && !t.includes("/")) {
-                            G = "/".concat(G);
+                            G = `/${G}`;
                         }
                         B.value += G;
                         append({
@@ -1565,7 +1565,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f
                             B.value = e;
                             continue;
                         }
-                        B.value = "(".concat(_).concat(e, "|").concat(B.value, ")");
+                        B.value = `(${_}${e}|${B.value})`;
                         m.output += B.value;
                         continue;
                     }
@@ -1702,7 +1702,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f
                             const t = D();
                             let e = G;
                             if (B.value === "(" && !/[!=<:]/.test(t) || t === "<" && !/<([!=]|\w+>)/.test(remaining())) {
-                                e = "\\".concat(G);
+                                e = `\\${G}`;
                             }
                             push({
                                 type: "text",
@@ -1782,7 +1782,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f
                     }
                     if (G !== "*") {
                         if (G === "$" || G === "^") {
-                            G = "\\".concat(G);
+                            G = `\\${G}`;
                         }
                         const t = a.exec(remaining());
                         if (t) {
@@ -1856,7 +1856,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f
                         }
                         if (n.type === "slash" && n.prev.type !== "bos" && !r && eos()) {
                             m.output = m.output.slice(0, -(n.output + B.output).length);
-                            n.output = "(?:".concat(n.output);
+                            n.output = `(?:${n.output}`;
                             B.type = "globstar";
                             B.output = globstar(u) + (u.strictSlashes ? ")" : "|$)");
                             B.value += G;
@@ -1868,9 +1868,9 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f
                         if (n.type === "slash" && n.prev.type !== "bos" && e[0] === "/") {
                             const t = e[1] !== void 0 ? "|$" : "";
                             m.output = m.output.slice(0, -(n.output + B.output).length);
-                            n.output = "(?:".concat(n.output);
+                            n.output = `(?:${n.output}`;
                             B.type = "globstar";
-                            B.output = "".concat(globstar(u)).concat(b, "|").concat(b).concat(t, ")");
+                            B.output = `${globstar(u)}${b}|${b}${t})`;
                             B.value += G;
                             m.output += n.output + B.output;
                             m.globstar = true;
@@ -1885,7 +1885,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f
                         if (n.type === "bos" && e[0] === "/") {
                             B.type = "globstar";
                             B.value += G;
-                            B.output = "(?:^|".concat(b, "|").concat(globstar(u)).concat(b, ")");
+                            B.output = `(?:^|${b}|${globstar(u)}${b})`;
                             m.output = B.output;
                             m.globstar = true;
                             consume(G + M());
@@ -1960,7 +1960,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f
                     push({
                         type: "maybe_slash",
                         value: "",
-                        output: "".concat(b, "?")
+                        output: `${b}?`
                     });
                 }
                 if (m.backtrack === true) {
@@ -1981,7 +1981,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f
                 const r = typeof u.maxLength === "number" ? Math.min(s, u.maxLength) : s;
                 const a = t.length;
                 if (a > r) {
-                    throw new SyntaxError("Input length: ".concat(a, ", exceeds maximum allowed length: ").concat(r));
+                    throw new SyntaxError(`Input length: ${a}, exceeds maximum allowed length: ${r}`);
                 }
                 t = c[t] || t;
                 const { DOT_LITERAL: i, SLASH_LITERAL: p, ONE_CHAR: l, DOTS_SLASH: f, NO_DOT: A, NO_DOTS: _, NO_DOTS_SLASH: R, STAR: E, START_ANCHOR: h } = n.globChars(u.windows);
@@ -1994,30 +1994,30 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f
                 };
                 let $ = u.bash === true ? ".*?" : E;
                 if (u.capture) {
-                    $ = "(".concat($, ")");
+                    $ = `(${$})`;
                 }
                 const globstar = (t)=>{
                     if (t.noglobstar === true) return $;
-                    return "(".concat(C, "(?:(?!").concat(h).concat(t.dot ? f : i, ").)*?)");
+                    return `(${C}(?:(?!${h}${t.dot ? f : i}).)*?)`;
                 };
                 const create = (t)=>{
                     switch(t){
                         case "*":
-                            return "".concat(g).concat(l).concat($);
+                            return `${g}${l}${$}`;
                         case ".*":
-                            return "".concat(i).concat(l).concat($);
+                            return `${i}${l}${$}`;
                         case "*.*":
-                            return "".concat(g).concat($).concat(i).concat(l).concat($);
+                            return `${g}${$}${i}${l}${$}`;
                         case "*/*":
-                            return "".concat(g).concat($).concat(p).concat(l).concat(b).concat($);
+                            return `${g}${$}${p}${l}${b}${$}`;
                         case "**":
                             return g + globstar(u);
                         case "**/*":
-                            return "(?:".concat(g).concat(globstar(u)).concat(p, ")?").concat(b).concat(l).concat($);
+                            return `(?:${g}${globstar(u)}${p})?${b}${l}${$}`;
                         case "**/*.*":
-                            return "(?:".concat(g).concat(globstar(u)).concat(p, ")?").concat(b).concat($).concat(i).concat(l).concat($);
+                            return `(?:${g}${globstar(u)}${p})?${b}${$}${i}${l}${$}`;
                         case "**/.*":
-                            return "(?:".concat(g).concat(globstar(u)).concat(p, ")?").concat(i).concat(l).concat($);
+                            return `(?:${g}${globstar(u)}${p})?${i}${l}${$}`;
                         default:
                             {
                                 const e = /^(.*?)\.(\w+)$/.exec(t);
@@ -2031,7 +2031,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f
                 const x = o.removePrefix(t, y);
                 let S = create(x);
                 if (S && u.strictSlashes !== true) {
-                    S += "".concat(p, "?");
+                    S += `${p}?`;
                 }
                 return S;
             };
@@ -2043,8 +2043,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f
             const s = u(96);
             const r = u(154);
             const isObject = (t)=>t && typeof t === "object" && !Array.isArray(t);
-            const picomatch = function(t, e) {
-                let u = arguments.length > 2 && arguments[2] !== void 0 ? arguments[2] : false;
+            const picomatch = (t, e, u = false)=>{
                 if (Array.isArray(t)) {
                     const n = t.map((t)=>picomatch(t, e, u));
                     const arrayMatcher = (t)=>{
@@ -2075,8 +2074,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f
                     };
                     isIgnored = picomatch(o.ignore, t, u);
                 }
-                const matcher = function(u) {
-                    let n = arguments.length > 1 && arguments[1] !== void 0 ? arguments[1] : false;
+                const matcher = (u, n = false)=>{
                     const { isMatch: i, match: c, output: p } = picomatch.test(u, r, e, {
                         glob: t,
                         posix: s
@@ -2115,8 +2113,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f
                 }
                 return matcher;
             };
-            picomatch.test = function(t, e, u) {
-                let { glob: n, posix: o } = arguments.length > 3 && arguments[3] !== void 0 ? arguments[3] : {};
+            picomatch.test = (t, e, u, { glob: n, posix: o } = {})=>{
                 if (typeof t !== "string") {
                     throw new TypeError("Expected input to be a string");
                 }
@@ -2160,17 +2157,16 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f
                 });
             };
             picomatch.scan = (t, e)=>n(t, e);
-            picomatch.compileRe = function(t, e) {
-                let u = arguments.length > 2 && arguments[2] !== void 0 ? arguments[2] : false, n = arguments.length > 3 && arguments[3] !== void 0 ? arguments[3] : false;
+            picomatch.compileRe = (t, e, u = false, n = false)=>{
                 if (u === true) {
                     return t.output;
                 }
                 const o = e || {};
                 const s = o.contains ? "" : "^";
                 const r = o.contains ? "" : "$";
-                let a = "".concat(s, "(?:").concat(t.output, ")").concat(r);
+                let a = `${s}(?:${t.output})${r}`;
                 if (t && t.negated === true) {
-                    a = "^(?!".concat(a, ").*$");
+                    a = `^(?!${a}).*$`;
                 }
                 const i = picomatch.toRegex(a, e);
                 if (n === true) {
@@ -2178,8 +2174,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f
                 }
                 return i;
             };
-            picomatch.makeRe = function(t) {
-                let e = arguments.length > 1 && arguments[1] !== void 0 ? arguments[1] : {}, u = arguments.length > 2 && arguments[2] !== void 0 ? arguments[2] : false, n = arguments.length > 3 && arguments[3] !== void 0 ? arguments[3] : false;
+            picomatch.makeRe = (t, e = {}, u = false, n = false)=>{
                 if (!t || typeof t !== "string") {
                     throw new TypeError("Expected a non-empty string");
                 }
@@ -2519,10 +2514,9 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f
                 const o = t.lastIndexOf(u, n);
                 if (o === -1) return t;
                 if (t[o - 1] === "\\") return e.escapeLast(t, u, o - 1);
-                return "".concat(t.slice(0, o), "\\").concat(t.slice(o));
+                return `${t.slice(0, o)}\\${t.slice(o)}`;
             };
-            e.removePrefix = function(t) {
-                let e = arguments.length > 1 && arguments[1] !== void 0 ? arguments[1] : {};
+            e.removePrefix = (t, e = {})=>{
                 let u = t;
                 if (u.startsWith("./")) {
                     u = u.slice(2);
@@ -2530,18 +2524,16 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f
                 }
                 return u;
             };
-            e.wrapOutput = function(t) {
-                let e = arguments.length > 1 && arguments[1] !== void 0 ? arguments[1] : {}, u = arguments.length > 2 && arguments[2] !== void 0 ? arguments[2] : {};
+            e.wrapOutput = (t, e = {}, u = {})=>{
                 const n = u.contains ? "" : "^";
                 const o = u.contains ? "" : "$";
-                let s = "".concat(n, "(?:").concat(t, ")").concat(o);
+                let s = `${n}(?:${t})${o}`;
                 if (e.negated === true) {
-                    s = "(?:^(?!".concat(s, ").*$)");
+                    s = `(?:^(?!${s}).*$)`;
                 }
                 return s;
             };
-            e.basename = function(t) {
-                let { windows: e } = arguments.length > 1 && arguments[1] !== void 0 ? arguments[1] : {};
+            e.basename = (t, { windows: e } = {})=>{
                 const u = t.split(e ? /[\\/]/ : "/");
                 const n = u[u.length - 1];
                 if (n === "") {
@@ -2574,7 +2566,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f
     module.exports = u;
 })();
 }),
-"[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/shared/lib/match-local-pattern.js [app-client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/shared/lib/match-local-pattern.js [app-ssr] (ecmascript)", ((__turbopack_context__, module, exports) => {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2598,7 +2590,7 @@ _export(exports, {
         return matchLocalPattern;
     }
 });
-const _picomatch = __turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/compiled/picomatch/index.js [app-client] (ecmascript)");
+const _picomatch = __turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/compiled/picomatch/index.js [app-ssr] (ecmascript)");
 function matchLocalPattern(pattern, url) {
     if (pattern.search !== undefined) {
         if (pattern.search !== url.search) {
@@ -2622,7 +2614,7 @@ function hasLocalMatch(localPatterns, urlPathAndQuery) {
     return localPatterns.some((p)=>matchLocalPattern(p, url));
 } //# sourceMappingURL=match-local-pattern.js.map
 }),
-"[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/shared/lib/match-remote-pattern.js [app-client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/shared/lib/match-remote-pattern.js [app-ssr] (ecmascript)", ((__turbopack_context__, module, exports) => {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2646,7 +2638,7 @@ _export(exports, {
         return matchRemotePattern;
     }
 });
-const _picomatch = __turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/compiled/picomatch/index.js [app-client] (ecmascript)");
+const _picomatch = __turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/compiled/picomatch/index.js [app-ssr] (ecmascript)");
 function matchRemotePattern(pattern, url) {
     if (pattern.protocol !== undefined) {
         if (pattern.protocol.replace(/:$/, '') !== url.protocol.replace(/:$/, '')) {
@@ -2687,11 +2679,9 @@ function hasRemoteMatch(domains, remotePatterns, url) {
     return domains.some((domain)=>url.hostname === domain) || remotePatterns.some((p)=>matchRemotePattern(p, url));
 } //# sourceMappingURL=match-remote-pattern.js.map
 }),
-"[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/shared/lib/image-loader.js [app-client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/shared/lib/image-loader.js [app-ssr] (ecmascript)", ((__turbopack_context__, module, exports) => {
 "use strict";
 
-var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f$theChat$2f$thechat$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = /*#__PURE__*/ __turbopack_context__.i("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/build/polyfills/process.js [app-client] (ecmascript)");
-"use strict";
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
@@ -2731,7 +2721,7 @@ function defaultLoader(param) {
         if (src.startsWith('/') && config.localPatterns) {
             if ("TURBOPACK compile-time truthy", 1) {
                 // We use dynamic require because this should only error in development
-                const { hasLocalMatch } = __turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/shared/lib/match-local-pattern.js [app-client] (ecmascript)");
+                const { hasLocalMatch } = __turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/shared/lib/match-local-pattern.js [app-ssr] (ecmascript)");
                 if (!hasLocalMatch(config.localPatterns, src)) {
                     throw Object.defineProperty(new Error("Invalid src prop (" + src + ") on `next/image` does not match `images.localPatterns` configured in your `next.config.js`\n" + "See more info: https://nextjs.org/docs/messages/next-image-unconfigured-localpatterns"), "__NEXT_ERROR_CODE", {
                         value: "E426",
@@ -2755,7 +2745,7 @@ function defaultLoader(param) {
             }
             if ("TURBOPACK compile-time truthy", 1) {
                 // We use dynamic require because this should only error in development
-                const { hasRemoteMatch } = __turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/shared/lib/match-remote-pattern.js [app-client] (ecmascript)");
+                const { hasRemoteMatch } = __turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/shared/lib/match-remote-pattern.js [app-ssr] (ecmascript)");
                 if (!hasRemoteMatch(config.domains, config.remotePatterns, parsedSrc)) {
                     throw Object.defineProperty(new Error("Invalid src prop (" + src + ') on `next/image`, hostname "' + parsedSrc.hostname + '" is not configured under images in your `next.config.js`\n' + "See more info: https://nextjs.org/docs/messages/next-image-unconfigured-host"), "__NEXT_ERROR_CODE", {
                         value: "E231",
@@ -2781,7 +2771,7 @@ function defaultLoader(param) {
 defaultLoader.__next_img_default = true;
 const _default = defaultLoader; //# sourceMappingURL=image-loader.js.map
 }),
-"[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/client/use-merged-ref.js [app-client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/client/use-merged-ref.js [app-ssr] (ecmascript)", ((__turbopack_context__, module, exports) => {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2793,7 +2783,7 @@ Object.defineProperty(exports, "useMergedRef", {
         return useMergedRef;
     }
 });
-const _react = __turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+const _react = __turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
 function useMergedRef(refA, refB) {
     const cleanupA = (0, _react.useRef)(null);
     const cleanupB = (0, _react.useRef)(null);
@@ -2852,12 +2842,9 @@ if ((typeof exports.default === 'function' || typeof exports.default === 'object
     module.exports = exports.default;
 } //# sourceMappingURL=use-merged-ref.js.map
 }),
-"[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/client/image-component.js [app-client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/client/image-component.js [app-ssr] (ecmascript)", ((__turbopack_context__, module, exports) => {
 "use strict";
 
-var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f$theChat$2f$thechat$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = /*#__PURE__*/ __turbopack_context__.i("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/build/polyfills/process.js [app-client] (ecmascript)");
-'use client';
-"use strict";
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
@@ -2867,19 +2854,19 @@ Object.defineProperty(exports, "Image", {
         return Image;
     }
 });
-const _interop_require_default = __turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/@swc/helpers/cjs/_interop_require_default.cjs [app-client] (ecmascript)");
-const _interop_require_wildcard = __turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/@swc/helpers/cjs/_interop_require_wildcard.cjs [app-client] (ecmascript)");
-const _jsxruntime = __turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/compiled/react/jsx-runtime.js [app-client] (ecmascript)");
-const _react = /*#__PURE__*/ _interop_require_wildcard._(__turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)"));
-const _reactdom = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/compiled/react-dom/index.js [app-client] (ecmascript)"));
-const _head = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/shared/lib/head.js [app-client] (ecmascript)"));
-const _getimgprops = __turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/shared/lib/get-img-props.js [app-client] (ecmascript)");
-const _imageconfig = __turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/shared/lib/image-config.js [app-client] (ecmascript)");
-const _imageconfigcontextsharedruntime = __turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/shared/lib/image-config-context.shared-runtime.js [app-client] (ecmascript)");
-const _warnonce = __turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/shared/lib/utils/warn-once.js [app-client] (ecmascript)");
-const _routercontextsharedruntime = __turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/shared/lib/router-context.shared-runtime.js [app-client] (ecmascript)");
-const _imageloader = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/shared/lib/image-loader.js [app-client] (ecmascript)"));
-const _usemergedref = __turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/client/use-merged-ref.js [app-client] (ecmascript)");
+const _interop_require_default = __turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/@swc/helpers/cjs/_interop_require_default.cjs [app-ssr] (ecmascript)");
+const _interop_require_wildcard = __turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/@swc/helpers/cjs/_interop_require_wildcard.cjs [app-ssr] (ecmascript)");
+const _jsxruntime = __turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-runtime.js [app-ssr] (ecmascript)");
+const _react = /*#__PURE__*/ _interop_require_wildcard._(__turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)"));
+const _reactdom = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-dom.js [app-ssr] (ecmascript)"));
+const _head = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/shared/lib/head.js [app-ssr] (ecmascript)"));
+const _getimgprops = __turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/shared/lib/get-img-props.js [app-ssr] (ecmascript)");
+const _imageconfig = __turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/shared/lib/image-config.js [app-ssr] (ecmascript)");
+const _imageconfigcontextsharedruntime = __turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/server/route-modules/app-page/vendored/contexts/image-config-context.js [app-ssr] (ecmascript)");
+const _warnonce = __turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/shared/lib/utils/warn-once.js [app-ssr] (ecmascript)");
+const _routercontextsharedruntime = __turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/server/route-modules/app-page/vendored/contexts/router-context.js [app-ssr] (ecmascript)");
+const _imageloader = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/shared/lib/image-loader.js [app-ssr] (ecmascript)"));
+const _usemergedref = __turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/client/use-merged-ref.js [app-ssr] (ecmascript)");
 // This is replaced by webpack define plugin
 const configEnv = ("TURBOPACK compile-time value", {
     "deviceSizes": ("TURBOPACK compile-time value", [
@@ -2910,7 +2897,7 @@ const configEnv = ("TURBOPACK compile-time value", {
     "remotePatterns": ("TURBOPACK compile-time value", []),
     "output": ("TURBOPACK compile-time value", "standalone")
 });
-if (typeof window === 'undefined') {
+if ("TURBOPACK compile-time truthy", 1) {
     ;
     globalThis.__NEXT_IMAGE_IMPORTED = true;
 }
@@ -3193,6 +3180,6 @@ if ((typeof exports.default === 'function' || typeof exports.default === 'object
     module.exports = exports.default;
 } //# sourceMappingURL=image-component.js.map
 }),
-]);
+];
 
-//# sourceMappingURL=deb80_next_dist_2ec4cf43._.js.map
+//# sourceMappingURL=deb80_a28f5812._.js.map

@@ -1,295 +1,4 @@
 (globalThis.TURBOPACK || (globalThis.TURBOPACK = [])).push([typeof document === "object" ? document.currentScript : undefined,
-"[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/shared/lib/side-effect.js [app-client] (ecmascript)", ((__turbopack_context__, module, exports) => {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-Object.defineProperty(exports, "default", {
-    enumerable: true,
-    get: function() {
-        return SideEffect;
-    }
-});
-const _react = __turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
-const isServer = typeof window === 'undefined';
-const useClientOnlyLayoutEffect = isServer ? ()=>{} : _react.useLayoutEffect;
-const useClientOnlyEffect = isServer ? ()=>{} : _react.useEffect;
-function SideEffect(props) {
-    const { headManager, reduceComponentsToState } = props;
-    function emitChange() {
-        if (headManager && headManager.mountedInstances) {
-            const headElements = _react.Children.toArray(Array.from(headManager.mountedInstances).filter(Boolean));
-            headManager.updateHead(reduceComponentsToState(headElements, props));
-        }
-    }
-    if (isServer) {
-        var _headManager_mountedInstances;
-        headManager == null ? void 0 : (_headManager_mountedInstances = headManager.mountedInstances) == null ? void 0 : _headManager_mountedInstances.add(props.children);
-        emitChange();
-    }
-    useClientOnlyLayoutEffect({
-        "SideEffect.useClientOnlyLayoutEffect": ()=>{
-            var _headManager_mountedInstances;
-            headManager == null ? void 0 : (_headManager_mountedInstances = headManager.mountedInstances) == null ? void 0 : _headManager_mountedInstances.add(props.children);
-            return ({
-                "SideEffect.useClientOnlyLayoutEffect": ()=>{
-                    var _headManager_mountedInstances;
-                    headManager == null ? void 0 : (_headManager_mountedInstances = headManager.mountedInstances) == null ? void 0 : _headManager_mountedInstances.delete(props.children);
-                }
-            })["SideEffect.useClientOnlyLayoutEffect"];
-        }
-    }["SideEffect.useClientOnlyLayoutEffect"]);
-    // We need to call `updateHead` method whenever the `SideEffect` is trigger in all
-    // life-cycles: mount, update, unmount. However, if there are multiple `SideEffect`s
-    // being rendered, we only trigger the method from the last one.
-    // This is ensured by keeping the last unflushed `updateHead` in the `_pendingUpdate`
-    // singleton in the layout effect pass, and actually trigger it in the effect pass.
-    useClientOnlyLayoutEffect({
-        "SideEffect.useClientOnlyLayoutEffect": ()=>{
-            if (headManager) {
-                headManager._pendingUpdate = emitChange;
-            }
-            return ({
-                "SideEffect.useClientOnlyLayoutEffect": ()=>{
-                    if (headManager) {
-                        headManager._pendingUpdate = emitChange;
-                    }
-                }
-            })["SideEffect.useClientOnlyLayoutEffect"];
-        }
-    }["SideEffect.useClientOnlyLayoutEffect"]);
-    useClientOnlyEffect({
-        "SideEffect.useClientOnlyEffect": ()=>{
-            if (headManager && headManager._pendingUpdate) {
-                headManager._pendingUpdate();
-                headManager._pendingUpdate = null;
-            }
-            return ({
-                "SideEffect.useClientOnlyEffect": ()=>{
-                    if (headManager && headManager._pendingUpdate) {
-                        headManager._pendingUpdate();
-                        headManager._pendingUpdate = null;
-                    }
-                }
-            })["SideEffect.useClientOnlyEffect"];
-        }
-    }["SideEffect.useClientOnlyEffect"]);
-    return null;
-} //# sourceMappingURL=side-effect.js.map
-}),
-"[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/shared/lib/amp-context.shared-runtime.js [app-client] (ecmascript)", ((__turbopack_context__, module, exports) => {
-"use strict";
-
-var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f$theChat$2f$thechat$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = /*#__PURE__*/ __turbopack_context__.i("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/build/polyfills/process.js [app-client] (ecmascript)");
-"use strict";
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-Object.defineProperty(exports, "AmpStateContext", {
-    enumerable: true,
-    get: function() {
-        return AmpStateContext;
-    }
-});
-const _interop_require_default = __turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/@swc/helpers/cjs/_interop_require_default.cjs [app-client] (ecmascript)");
-const _react = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)"));
-const AmpStateContext = _react.default.createContext({});
-if ("TURBOPACK compile-time truthy", 1) {
-    AmpStateContext.displayName = 'AmpStateContext';
-} //# sourceMappingURL=amp-context.shared-runtime.js.map
-}),
-"[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/shared/lib/amp-mode.js [app-client] (ecmascript)", ((__turbopack_context__, module, exports) => {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-Object.defineProperty(exports, "isInAmpMode", {
-    enumerable: true,
-    get: function() {
-        return isInAmpMode;
-    }
-});
-function isInAmpMode(param) {
-    let { ampFirst = false, hybrid = false, hasQuery = false } = param === void 0 ? {} : param;
-    return ampFirst || hybrid && hasQuery;
-} //# sourceMappingURL=amp-mode.js.map
-}),
-"[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/shared/lib/head.js [app-client] (ecmascript)", ((__turbopack_context__, module, exports) => {
-"use strict";
-
-var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f$theChat$2f$thechat$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = /*#__PURE__*/ __turbopack_context__.i("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/build/polyfills/process.js [app-client] (ecmascript)");
-'use client';
-"use strict";
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-0 && (module.exports = {
-    default: null,
-    defaultHead: null
-});
-function _export(target, all) {
-    for(var name in all)Object.defineProperty(target, name, {
-        enumerable: true,
-        get: all[name]
-    });
-}
-_export(exports, {
-    default: function() {
-        return _default;
-    },
-    defaultHead: function() {
-        return defaultHead;
-    }
-});
-const _interop_require_default = __turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/@swc/helpers/cjs/_interop_require_default.cjs [app-client] (ecmascript)");
-const _interop_require_wildcard = __turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/@swc/helpers/cjs/_interop_require_wildcard.cjs [app-client] (ecmascript)");
-const _jsxruntime = __turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/compiled/react/jsx-runtime.js [app-client] (ecmascript)");
-const _react = /*#__PURE__*/ _interop_require_wildcard._(__turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)"));
-const _sideeffect = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/shared/lib/side-effect.js [app-client] (ecmascript)"));
-const _ampcontextsharedruntime = __turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/shared/lib/amp-context.shared-runtime.js [app-client] (ecmascript)");
-const _headmanagercontextsharedruntime = __turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/shared/lib/head-manager-context.shared-runtime.js [app-client] (ecmascript)");
-const _ampmode = __turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/shared/lib/amp-mode.js [app-client] (ecmascript)");
-const _warnonce = __turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/shared/lib/utils/warn-once.js [app-client] (ecmascript)");
-function defaultHead(inAmpMode) {
-    if (inAmpMode === void 0) inAmpMode = false;
-    const head = [
-        /*#__PURE__*/ (0, _jsxruntime.jsx)("meta", {
-            charSet: "utf-8"
-        }, "charset")
-    ];
-    if (!inAmpMode) {
-        head.push(/*#__PURE__*/ (0, _jsxruntime.jsx)("meta", {
-            name: "viewport",
-            content: "width=device-width"
-        }, "viewport"));
-    }
-    return head;
-}
-function onlyReactElement(list, child) {
-    // React children can be "string" or "number" in this case we ignore them for backwards compat
-    if (typeof child === 'string' || typeof child === 'number') {
-        return list;
-    }
-    // Adds support for React.Fragment
-    if (child.type === _react.default.Fragment) {
-        return list.concat(_react.default.Children.toArray(child.props.children).reduce((fragmentList, fragmentChild)=>{
-            if (typeof fragmentChild === 'string' || typeof fragmentChild === 'number') {
-                return fragmentList;
-            }
-            return fragmentList.concat(fragmentChild);
-        }, []));
-    }
-    return list.concat(child);
-}
-const METATYPES = [
-    'name',
-    'httpEquiv',
-    'charSet',
-    'itemProp'
-];
-/*
- returns a function for filtering head child elements
- which shouldn't be duplicated, like <title/>
- Also adds support for deduplicated `key` properties
-*/ function unique() {
-    const keys = new Set();
-    const tags = new Set();
-    const metaTypes = new Set();
-    const metaCategories = {};
-    return (h)=>{
-        let isUnique = true;
-        let hasKey = false;
-        if (h.key && typeof h.key !== 'number' && h.key.indexOf('$') > 0) {
-            hasKey = true;
-            const key = h.key.slice(h.key.indexOf('$') + 1);
-            if (keys.has(key)) {
-                isUnique = false;
-            } else {
-                keys.add(key);
-            }
-        }
-        // eslint-disable-next-line default-case
-        switch(h.type){
-            case 'title':
-            case 'base':
-                if (tags.has(h.type)) {
-                    isUnique = false;
-                } else {
-                    tags.add(h.type);
-                }
-                break;
-            case 'meta':
-                for(let i = 0, len = METATYPES.length; i < len; i++){
-                    const metatype = METATYPES[i];
-                    if (!h.props.hasOwnProperty(metatype)) continue;
-                    if (metatype === 'charSet') {
-                        if (metaTypes.has(metatype)) {
-                            isUnique = false;
-                        } else {
-                            metaTypes.add(metatype);
-                        }
-                    } else {
-                        const category = h.props[metatype];
-                        const categories = metaCategories[metatype] || new Set();
-                        if ((metatype !== 'name' || !hasKey) && categories.has(category)) {
-                            isUnique = false;
-                        } else {
-                            categories.add(category);
-                            metaCategories[metatype] = categories;
-                        }
-                    }
-                }
-                break;
-        }
-        return isUnique;
-    };
-}
-/**
- *
- * @param headChildrenElements List of children of <Head>
- */ function reduceComponents(headChildrenElements, props) {
-    const { inAmpMode } = props;
-    return headChildrenElements.reduce(onlyReactElement, []).reverse().concat(defaultHead(inAmpMode).reverse()).filter(unique()).reverse().map((c, i)=>{
-        const key = c.key || i;
-        if ("TURBOPACK compile-time truthy", 1) {
-            // omit JSON-LD structured data snippets from the warning
-            if (c.type === 'script' && c.props['type'] !== 'application/ld+json') {
-                const srcMessage = c.props['src'] ? '<script> tag with src="' + c.props['src'] + '"' : "inline <script>";
-                (0, _warnonce.warnOnce)("Do not add <script> tags using next/head (see " + srcMessage + "). Use next/script instead. \nSee more info here: https://nextjs.org/docs/messages/no-script-tags-in-head-component");
-            } else if (c.type === 'link' && c.props['rel'] === 'stylesheet') {
-                (0, _warnonce.warnOnce)('Do not add stylesheets using next/head (see <link rel="stylesheet"> tag with href="' + c.props['href'] + '"). Use Document instead. \nSee more info here: https://nextjs.org/docs/messages/no-stylesheets-in-head-component');
-            }
-        }
-        return /*#__PURE__*/ _react.default.cloneElement(c, {
-            key
-        });
-    });
-}
-/**
- * This component injects elements to `<head>` of your page.
- * To avoid duplicated `tags` in `<head>` you can use the `key` property, which will make sure every tag is only rendered once.
- */ function Head(param) {
-    let { children } = param;
-    const ampState = (0, _react.useContext)(_ampcontextsharedruntime.AmpStateContext);
-    const headManager = (0, _react.useContext)(_headmanagercontextsharedruntime.HeadManagerContext);
-    return /*#__PURE__*/ (0, _jsxruntime.jsx)(_sideeffect.default, {
-        reduceComponentsToState: reduceComponents,
-        headManager: headManager,
-        inAmpMode: (0, _ampmode.isInAmpMode)(ampState),
-        children: children
-    });
-}
-const _default = Head;
-if ((typeof exports.default === 'function' || typeof exports.default === 'object' && exports.default !== null) && typeof exports.default.__esModule === 'undefined') {
-    Object.defineProperty(exports.default, '__esModule', {
-        value: true
-    });
-    Object.assign(exports.default, exports);
-    module.exports = exports.default;
-} //# sourceMappingURL=head.js.map
-}),
 "[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/shared/lib/image-blur-svg.js [app-client] (ecmascript)", ((__turbopack_context__, module, exports) => {
 "use strict";
 
@@ -940,6 +649,297 @@ function getImgProps(param, _state) {
         meta
     };
 } //# sourceMappingURL=get-img-props.js.map
+}),
+"[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/shared/lib/side-effect.js [app-client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+Object.defineProperty(exports, "default", {
+    enumerable: true,
+    get: function() {
+        return SideEffect;
+    }
+});
+const _react = __turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+const isServer = typeof window === 'undefined';
+const useClientOnlyLayoutEffect = isServer ? ()=>{} : _react.useLayoutEffect;
+const useClientOnlyEffect = isServer ? ()=>{} : _react.useEffect;
+function SideEffect(props) {
+    const { headManager, reduceComponentsToState } = props;
+    function emitChange() {
+        if (headManager && headManager.mountedInstances) {
+            const headElements = _react.Children.toArray(Array.from(headManager.mountedInstances).filter(Boolean));
+            headManager.updateHead(reduceComponentsToState(headElements, props));
+        }
+    }
+    if (isServer) {
+        var _headManager_mountedInstances;
+        headManager == null ? void 0 : (_headManager_mountedInstances = headManager.mountedInstances) == null ? void 0 : _headManager_mountedInstances.add(props.children);
+        emitChange();
+    }
+    useClientOnlyLayoutEffect({
+        "SideEffect.useClientOnlyLayoutEffect": ()=>{
+            var _headManager_mountedInstances;
+            headManager == null ? void 0 : (_headManager_mountedInstances = headManager.mountedInstances) == null ? void 0 : _headManager_mountedInstances.add(props.children);
+            return ({
+                "SideEffect.useClientOnlyLayoutEffect": ()=>{
+                    var _headManager_mountedInstances;
+                    headManager == null ? void 0 : (_headManager_mountedInstances = headManager.mountedInstances) == null ? void 0 : _headManager_mountedInstances.delete(props.children);
+                }
+            })["SideEffect.useClientOnlyLayoutEffect"];
+        }
+    }["SideEffect.useClientOnlyLayoutEffect"]);
+    // We need to call `updateHead` method whenever the `SideEffect` is trigger in all
+    // life-cycles: mount, update, unmount. However, if there are multiple `SideEffect`s
+    // being rendered, we only trigger the method from the last one.
+    // This is ensured by keeping the last unflushed `updateHead` in the `_pendingUpdate`
+    // singleton in the layout effect pass, and actually trigger it in the effect pass.
+    useClientOnlyLayoutEffect({
+        "SideEffect.useClientOnlyLayoutEffect": ()=>{
+            if (headManager) {
+                headManager._pendingUpdate = emitChange;
+            }
+            return ({
+                "SideEffect.useClientOnlyLayoutEffect": ()=>{
+                    if (headManager) {
+                        headManager._pendingUpdate = emitChange;
+                    }
+                }
+            })["SideEffect.useClientOnlyLayoutEffect"];
+        }
+    }["SideEffect.useClientOnlyLayoutEffect"]);
+    useClientOnlyEffect({
+        "SideEffect.useClientOnlyEffect": ()=>{
+            if (headManager && headManager._pendingUpdate) {
+                headManager._pendingUpdate();
+                headManager._pendingUpdate = null;
+            }
+            return ({
+                "SideEffect.useClientOnlyEffect": ()=>{
+                    if (headManager && headManager._pendingUpdate) {
+                        headManager._pendingUpdate();
+                        headManager._pendingUpdate = null;
+                    }
+                }
+            })["SideEffect.useClientOnlyEffect"];
+        }
+    }["SideEffect.useClientOnlyEffect"]);
+    return null;
+} //# sourceMappingURL=side-effect.js.map
+}),
+"[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/shared/lib/amp-context.shared-runtime.js [app-client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"use strict";
+
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f$theChat$2f$thechat$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = /*#__PURE__*/ __turbopack_context__.i("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/build/polyfills/process.js [app-client] (ecmascript)");
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+Object.defineProperty(exports, "AmpStateContext", {
+    enumerable: true,
+    get: function() {
+        return AmpStateContext;
+    }
+});
+const _interop_require_default = __turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/@swc/helpers/cjs/_interop_require_default.cjs [app-client] (ecmascript)");
+const _react = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)"));
+const AmpStateContext = _react.default.createContext({});
+if ("TURBOPACK compile-time truthy", 1) {
+    AmpStateContext.displayName = 'AmpStateContext';
+} //# sourceMappingURL=amp-context.shared-runtime.js.map
+}),
+"[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/shared/lib/amp-mode.js [app-client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+Object.defineProperty(exports, "isInAmpMode", {
+    enumerable: true,
+    get: function() {
+        return isInAmpMode;
+    }
+});
+function isInAmpMode(param) {
+    let { ampFirst = false, hybrid = false, hasQuery = false } = param === void 0 ? {} : param;
+    return ampFirst || hybrid && hasQuery;
+} //# sourceMappingURL=amp-mode.js.map
+}),
+"[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/shared/lib/head.js [app-client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"use strict";
+
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f$theChat$2f$thechat$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = /*#__PURE__*/ __turbopack_context__.i("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/build/polyfills/process.js [app-client] (ecmascript)");
+'use client';
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+0 && (module.exports = {
+    default: null,
+    defaultHead: null
+});
+function _export(target, all) {
+    for(var name in all)Object.defineProperty(target, name, {
+        enumerable: true,
+        get: all[name]
+    });
+}
+_export(exports, {
+    default: function() {
+        return _default;
+    },
+    defaultHead: function() {
+        return defaultHead;
+    }
+});
+const _interop_require_default = __turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/@swc/helpers/cjs/_interop_require_default.cjs [app-client] (ecmascript)");
+const _interop_require_wildcard = __turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/@swc/helpers/cjs/_interop_require_wildcard.cjs [app-client] (ecmascript)");
+const _jsxruntime = __turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/compiled/react/jsx-runtime.js [app-client] (ecmascript)");
+const _react = /*#__PURE__*/ _interop_require_wildcard._(__turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)"));
+const _sideeffect = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/shared/lib/side-effect.js [app-client] (ecmascript)"));
+const _ampcontextsharedruntime = __turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/shared/lib/amp-context.shared-runtime.js [app-client] (ecmascript)");
+const _headmanagercontextsharedruntime = __turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/shared/lib/head-manager-context.shared-runtime.js [app-client] (ecmascript)");
+const _ampmode = __turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/shared/lib/amp-mode.js [app-client] (ecmascript)");
+const _warnonce = __turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/shared/lib/utils/warn-once.js [app-client] (ecmascript)");
+function defaultHead(inAmpMode) {
+    if (inAmpMode === void 0) inAmpMode = false;
+    const head = [
+        /*#__PURE__*/ (0, _jsxruntime.jsx)("meta", {
+            charSet: "utf-8"
+        }, "charset")
+    ];
+    if (!inAmpMode) {
+        head.push(/*#__PURE__*/ (0, _jsxruntime.jsx)("meta", {
+            name: "viewport",
+            content: "width=device-width"
+        }, "viewport"));
+    }
+    return head;
+}
+function onlyReactElement(list, child) {
+    // React children can be "string" or "number" in this case we ignore them for backwards compat
+    if (typeof child === 'string' || typeof child === 'number') {
+        return list;
+    }
+    // Adds support for React.Fragment
+    if (child.type === _react.default.Fragment) {
+        return list.concat(_react.default.Children.toArray(child.props.children).reduce((fragmentList, fragmentChild)=>{
+            if (typeof fragmentChild === 'string' || typeof fragmentChild === 'number') {
+                return fragmentList;
+            }
+            return fragmentList.concat(fragmentChild);
+        }, []));
+    }
+    return list.concat(child);
+}
+const METATYPES = [
+    'name',
+    'httpEquiv',
+    'charSet',
+    'itemProp'
+];
+/*
+ returns a function for filtering head child elements
+ which shouldn't be duplicated, like <title/>
+ Also adds support for deduplicated `key` properties
+*/ function unique() {
+    const keys = new Set();
+    const tags = new Set();
+    const metaTypes = new Set();
+    const metaCategories = {};
+    return (h)=>{
+        let isUnique = true;
+        let hasKey = false;
+        if (h.key && typeof h.key !== 'number' && h.key.indexOf('$') > 0) {
+            hasKey = true;
+            const key = h.key.slice(h.key.indexOf('$') + 1);
+            if (keys.has(key)) {
+                isUnique = false;
+            } else {
+                keys.add(key);
+            }
+        }
+        // eslint-disable-next-line default-case
+        switch(h.type){
+            case 'title':
+            case 'base':
+                if (tags.has(h.type)) {
+                    isUnique = false;
+                } else {
+                    tags.add(h.type);
+                }
+                break;
+            case 'meta':
+                for(let i = 0, len = METATYPES.length; i < len; i++){
+                    const metatype = METATYPES[i];
+                    if (!h.props.hasOwnProperty(metatype)) continue;
+                    if (metatype === 'charSet') {
+                        if (metaTypes.has(metatype)) {
+                            isUnique = false;
+                        } else {
+                            metaTypes.add(metatype);
+                        }
+                    } else {
+                        const category = h.props[metatype];
+                        const categories = metaCategories[metatype] || new Set();
+                        if ((metatype !== 'name' || !hasKey) && categories.has(category)) {
+                            isUnique = false;
+                        } else {
+                            categories.add(category);
+                            metaCategories[metatype] = categories;
+                        }
+                    }
+                }
+                break;
+        }
+        return isUnique;
+    };
+}
+/**
+ *
+ * @param headChildrenElements List of children of <Head>
+ */ function reduceComponents(headChildrenElements, props) {
+    const { inAmpMode } = props;
+    return headChildrenElements.reduce(onlyReactElement, []).reverse().concat(defaultHead(inAmpMode).reverse()).filter(unique()).reverse().map((c, i)=>{
+        const key = c.key || i;
+        if ("TURBOPACK compile-time truthy", 1) {
+            // omit JSON-LD structured data snippets from the warning
+            if (c.type === 'script' && c.props['type'] !== 'application/ld+json') {
+                const srcMessage = c.props['src'] ? '<script> tag with src="' + c.props['src'] + '"' : "inline <script>";
+                (0, _warnonce.warnOnce)("Do not add <script> tags using next/head (see " + srcMessage + "). Use next/script instead. \nSee more info here: https://nextjs.org/docs/messages/no-script-tags-in-head-component");
+            } else if (c.type === 'link' && c.props['rel'] === 'stylesheet') {
+                (0, _warnonce.warnOnce)('Do not add stylesheets using next/head (see <link rel="stylesheet"> tag with href="' + c.props['href'] + '"). Use Document instead. \nSee more info here: https://nextjs.org/docs/messages/no-stylesheets-in-head-component');
+            }
+        }
+        return /*#__PURE__*/ _react.default.cloneElement(c, {
+            key
+        });
+    });
+}
+/**
+ * This component injects elements to `<head>` of your page.
+ * To avoid duplicated `tags` in `<head>` you can use the `key` property, which will make sure every tag is only rendered once.
+ */ function Head(param) {
+    let { children } = param;
+    const ampState = (0, _react.useContext)(_ampcontextsharedruntime.AmpStateContext);
+    const headManager = (0, _react.useContext)(_headmanagercontextsharedruntime.HeadManagerContext);
+    return /*#__PURE__*/ (0, _jsxruntime.jsx)(_sideeffect.default, {
+        reduceComponentsToState: reduceComponents,
+        headManager: headManager,
+        inAmpMode: (0, _ampmode.isInAmpMode)(ampState),
+        children: children
+    });
+}
+const _default = Head;
+if ((typeof exports.default === 'function' || typeof exports.default === 'object' && exports.default !== null) && typeof exports.default.__esModule === 'undefined') {
+    Object.defineProperty(exports.default, '__esModule', {
+        value: true
+    });
+    Object.assign(exports.default, exports);
+    module.exports = exports.default;
+} //# sourceMappingURL=head.js.map
 }),
 "[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/shared/lib/image-config-context.shared-runtime.js [app-client] (ecmascript)", ((__turbopack_context__, module, exports) => {
 "use strict";
@@ -3193,6 +3193,88 @@ if ((typeof exports.default === 'function' || typeof exports.default === 'object
     module.exports = exports.default;
 } //# sourceMappingURL=image-component.js.map
 }),
+"[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/shared/lib/image-external.js [app-client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"use strict";
+
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f$theChat$2f$thechat$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = /*#__PURE__*/ __turbopack_context__.i("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/build/polyfills/process.js [app-client] (ecmascript)");
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+0 && (module.exports = {
+    default: null,
+    getImageProps: null
+});
+function _export(target, all) {
+    for(var name in all)Object.defineProperty(target, name, {
+        enumerable: true,
+        get: all[name]
+    });
+}
+_export(exports, {
+    default: function() {
+        return _default;
+    },
+    getImageProps: function() {
+        return getImageProps;
+    }
+});
+const _interop_require_default = __turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/@swc/helpers/cjs/_interop_require_default.cjs [app-client] (ecmascript)");
+const _getimgprops = __turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/shared/lib/get-img-props.js [app-client] (ecmascript)");
+const _imagecomponent = __turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/client/image-component.js [app-client] (ecmascript)");
+const _imageloader = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/shared/lib/image-loader.js [app-client] (ecmascript)"));
+function getImageProps(imgProps) {
+    const { props } = (0, _getimgprops.getImgProps)(imgProps, {
+        defaultLoader: _imageloader.default,
+        // This is replaced by webpack define plugin
+        imgConf: ("TURBOPACK compile-time value", {
+            "deviceSizes": ("TURBOPACK compile-time value", [
+                ("TURBOPACK compile-time value", 640),
+                ("TURBOPACK compile-time value", 750),
+                ("TURBOPACK compile-time value", 828),
+                ("TURBOPACK compile-time value", 1080),
+                ("TURBOPACK compile-time value", 1200),
+                ("TURBOPACK compile-time value", 1920),
+                ("TURBOPACK compile-time value", 2048),
+                ("TURBOPACK compile-time value", 3840)
+            ]),
+            "imageSizes": ("TURBOPACK compile-time value", [
+                ("TURBOPACK compile-time value", 16),
+                ("TURBOPACK compile-time value", 32),
+                ("TURBOPACK compile-time value", 48),
+                ("TURBOPACK compile-time value", 64),
+                ("TURBOPACK compile-time value", 96),
+                ("TURBOPACK compile-time value", 128),
+                ("TURBOPACK compile-time value", 256),
+                ("TURBOPACK compile-time value", 384)
+            ]),
+            "path": ("TURBOPACK compile-time value", "/_next/image"),
+            "loader": ("TURBOPACK compile-time value", "default"),
+            "dangerouslyAllowSVG": ("TURBOPACK compile-time value", false),
+            "unoptimized": ("TURBOPACK compile-time value", false),
+            "domains": ("TURBOPACK compile-time value", []),
+            "remotePatterns": ("TURBOPACK compile-time value", []),
+            "output": ("TURBOPACK compile-time value", "standalone")
+        })
+    });
+    // Normally we don't care about undefined props because we pass to JSX,
+    // but this exported function could be used by the end user for anything
+    // so we delete undefined props to clean it up a little.
+    for (const [key, value] of Object.entries(props)){
+        if (value === undefined) {
+            delete props[key];
+        }
+    }
+    return {
+        props
+    };
+}
+const _default = _imagecomponent.Image; //# sourceMappingURL=image-external.js.map
+}),
+"[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/image.js [app-client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+
+module.exports = __turbopack_context__.r("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/shared/lib/image-external.js [app-client] (ecmascript)");
+}),
 ]);
 
-//# sourceMappingURL=deb80_next_dist_2ec4cf43._.js.map
+//# sourceMappingURL=deb80_next_61fdec73._.js.map
