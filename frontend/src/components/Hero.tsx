@@ -42,7 +42,7 @@ export default function Hero() {
 
                 <div className=" w-full h-full " >
                     <Image
-                        src={"/hero-images/left.webp"}
+                        src={"/Hero-images/left.webp"}
                         alt="image"
                         width={1000}
                         height={1000}
@@ -51,7 +51,7 @@ export default function Hero() {
 
 
                     <Image
-                        src={"/hero-images/right.webp"}
+                        src={"/Hero-images/right.webp"}
                         alt="image"
                         width={1000}
                         height={1000}
