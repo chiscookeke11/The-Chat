@@ -103,7 +103,7 @@ function Navbar() {
             const handleScroll = {
                 "Navbar.useEffect.handleScroll": ()=>{
                     const currentScrollY = window.scrollY;
-                    // if scrolling down  hide
+                    // if scrolling down → hide
                     if (currentScrollY > lastScrollY && currentScrollY > 200) {
                         setHidden(true);
                     } else {
@@ -264,31 +264,14 @@ var _s = __turbopack_context__.k.signature();
 function CustomCursor() {
     _s();
     const cursorRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f$theChat$2f$thechat$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
-    const [enabled, setEnabled] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f$theChat$2f$thechat$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f$theChat$2f$thechat$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "CustomCursor.useEffect": ()=>{
-            const mediaQuery = window.matchMedia("(hover: hover) and (pointer: fine)");
-            setEnabled(mediaQuery.matches);
-            const handleChange = {
-                "CustomCursor.useEffect.handleChange": (e)=>{
-                    setEnabled(e.matches);
-                }
-            }["CustomCursor.useEffect.handleChange"];
-            mediaQuery.addEventListener("change", handleChange);
-            return ({
-                "CustomCursor.useEffect": ()=>{
-                    mediaQuery.removeEventListener("change", handleChange);
-                }
-            })["CustomCursor.useEffect"];
-        }
-    }["CustomCursor.useEffect"], []);
-    (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f$theChat$2f$thechat$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
-        "CustomCursor.useEffect": ()=>{
-            if (!enabled) return;
             const cursor = cursorRef.current;
             if (!cursor) return;
             let mouseX = 0;
             let mouseY = 0;
+            let currentX = 0;
+            let currentY = 0;
             const handleMouseMove = {
                 "CustomCursor.useEffect.handleMouseMove": (e)=>{
                     mouseX = e.clientX;
@@ -298,7 +281,9 @@ function CustomCursor() {
             window.addEventListener("mousemove", handleMouseMove);
             const animate = {
                 "CustomCursor.useEffect.animate": ()=>{
-                    cursor.style.transform = "translate(".concat(mouseX, "px, ").concat(mouseY, "px) translate(-50%, -50%)");
+                    currentX = mouseX;
+                    currentY = mouseY;
+                    cursor.style.transform = "translate(".concat(currentX, "px, ").concat(currentY, "px) translate(-50%, -50%)");
                     requestAnimationFrame(animate);
                 }
             }["CustomCursor.useEffect.animate"];
@@ -309,20 +294,17 @@ function CustomCursor() {
                 }
             })["CustomCursor.useEffect"];
         }
-    }["CustomCursor.useEffect"], [
-        enabled
-    ]);
-    if (!enabled) return null;
+    }["CustomCursor.useEffect"], []);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f$theChat$2f$thechat$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        ref: cursorRef,
-        className: "custom-cursor"
+        className: "custom-cursor ",
+        ref: cursorRef
     }, void 0, false, {
         fileName: "[project]/Desktop/my-learning/theChat/thechat/frontend/src/components/CustomCursor.tsx",
-        lineNumber: 57,
+        lineNumber: 41,
         columnNumber: 12
     }, this);
 }
-_s(CustomCursor, "jk1rB5Hh8bPJ9JH1bOVjxJ+q4Vg=");
+_s(CustomCursor, "BAOXNtFTrLv46f15Gc0vVLC8KO4=");
 _c = CustomCursor;
 var _c;
 __turbopack_context__.k.register(_c, "CustomCursor");

@@ -106,7 +106,7 @@ function Navbar() {
         let lastScrollY = window.scrollY;
         const handleScroll = ()=>{
             const currentScrollY = window.scrollY;
-            // if scrolling down  hide
+            // if scrolling down → hide
             if (currentScrollY > lastScrollY && currentScrollY > 200) {
                 setHidden(true);
             } else {
@@ -270,47 +270,35 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f
 ;
 function CustomCursor() {
     const cursorRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f$theChat$2f$thechat$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])(null);
-    const [enabled, setEnabled] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f$theChat$2f$thechat$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f$theChat$2f$thechat$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
-        const mediaQuery = window.matchMedia("(hover: hover) and (pointer: fine)");
-        setEnabled(mediaQuery.matches);
-        const handleChange = (e)=>{
-            setEnabled(e.matches);
-        };
-        mediaQuery.addEventListener("change", handleChange);
-        return ()=>{
-            mediaQuery.removeEventListener("change", handleChange);
-        };
-    }, []);
-    (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f$theChat$2f$thechat$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
-        if (!enabled) return;
         const cursor = cursorRef.current;
         if (!cursor) return;
         let mouseX = 0;
         let mouseY = 0;
+        let currentX = 0;
+        let currentY = 0;
         const handleMouseMove = (e)=>{
             mouseX = e.clientX;
             mouseY = e.clientY;
         };
         window.addEventListener("mousemove", handleMouseMove);
         const animate = ()=>{
-            cursor.style.transform = `translate(${mouseX}px, ${mouseY}px) translate(-50%, -50%)`;
+            currentX = mouseX;
+            currentY = mouseY;
+            cursor.style.transform = `translate(${currentX}px, ${currentY}px) translate(-50%, -50%)`;
             requestAnimationFrame(animate);
         };
         animate();
         return ()=>{
             window.removeEventListener("mousemove", handleMouseMove);
         };
-    }, [
-        enabled
-    ]);
-    if (!enabled) return null;
+    }, []);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f$theChat$2f$thechat$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        ref: cursorRef,
-        className: "custom-cursor"
+        className: "custom-cursor ",
+        ref: cursorRef
     }, void 0, false, {
         fileName: "[project]/Desktop/my-learning/theChat/thechat/frontend/src/components/CustomCursor.tsx",
-        lineNumber: 57,
+        lineNumber: 41,
         columnNumber: 12
     }, this);
 }

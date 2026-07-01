@@ -1,37 +1,19 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 
 export default function CustomCursor() {
     const cursorRef = useRef<HTMLDivElement>(null);
-    const [enabled, setEnabled] = useState(false);
 
     useEffect(() => {
-        const mediaQuery = window.matchMedia(
-            "(hover: hover) and (pointer: fine)"
-        );
-
-        setEnabled(mediaQuery.matches);
-
-        const handleChange = (e: MediaQueryListEvent) => {
-            setEnabled(e.matches);
-        };
-
-        mediaQuery.addEventListener("change", handleChange);
-
-        return () => {
-            mediaQuery.removeEventListener("change", handleChange);
-        };
-    }, []);
-
-    useEffect(() => {
-        if (!enabled) return;
-
         const cursor = cursorRef.current;
         if (!cursor) return;
 
         let mouseX = 0;
         let mouseY = 0;
+
+        let currentX = 0;
+        let currentY = 0;
 
         const handleMouseMove = (e: MouseEvent) => {
             mouseX = e.clientX;
@@ -41,7 +23,11 @@ export default function CustomCursor() {
         window.addEventListener("mousemove", handleMouseMove);
 
         const animate = () => {
-            cursor.style.transform = `translate(${mouseX}px, ${mouseY}px) translate(-50%, -50%)`;
+            currentX = mouseX;
+            currentY = mouseY;
+
+            cursor.style.transform = `translate(${currentX}px, ${currentY}px) translate(-50%, -50%)`;
+
             requestAnimationFrame(animate);
         };
 
@@ -50,9 +36,7 @@ export default function CustomCursor() {
         return () => {
             window.removeEventListener("mousemove", handleMouseMove);
         };
-    }, [enabled]);
+    }, []);
 
-    if (!enabled) return null;
-
-    return <div ref={cursorRef} className="custom-cursor" />;
+    return <div className="custom-cursor " ref={cursorRef} />;
 }

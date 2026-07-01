@@ -472,10 +472,6 @@
     z-index: 20;
   }
 
-  .z-50 {
-    z-index: 50;
-  }
-
   .block {
     display: block;
   }
@@ -915,6 +911,7 @@
 body {
   background: var(--background);
   color: var(--foreground);
+  cursor: none;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -934,12 +931,6 @@ a, button, input, textarea {
   position: fixed;
   top: 0;
   left: 0;
-}
-
-@media (hover: hover) and (pointer: fine) {
-  body, a, button, input, textarea {
-    cursor: none;
-  }
 }
 
 @property --tw-translate-x {
