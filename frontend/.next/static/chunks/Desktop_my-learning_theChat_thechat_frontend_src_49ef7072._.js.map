@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/USER/Desktop/my-learning/theChat/thechat/frontend/src/components/UI/Button.tsx"],"sourcesContent":["import React from \"react\"\r\n\r\ninterface buttonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {\r\n    children: React.ReactNode,\r\n}\r\n\r\n\r\nexport default function Button({ children, ...props }: buttonProps) {\r\n    return (\r\n        <button\r\n            className=\"\r\n  border-2 border-white\r\n  py-4 md:py-6\r\n  px-10\r\n  rounded-[100px]\r\n  text-xl md:text-3xl\r\n  hover:bg-[#b3a8ff]\r\n  hover:border-[#b3a8ff]\r\n  hover:text-black\r\n  transition-all duration-200 ease-in-out\r\n  bg-transparent\r\n  z-10\r\n\"\r\n            {...props}>\r\n            {children}\r\n        </button>\r\n    )\r\n}"],"names":[],"mappings":";;;;;;AAOe,SAAS,OAAO,KAAmC;QAAnC,EAAE,QAAQ,EAAE,GAAG,OAAoB,GAAnC;IAC3B,qBACI,4PAAC;QACG,WAAU;QAaT,GAAG,KAAK;kBACR;;;;;;AAGb;KApBwB","debugId":null}},
+    {"offset": {"line": 38, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/USER/Desktop/my-learning/theChat/thechat/frontend/src/app/page.tsx"],"sourcesContent":["\"use client\"\n\nimport Hero from \"@/components/Hero\";\n\n\nexport default function Home() {\n  return (\n    <div className=\"w-full  \" >\n      <Hero />\n    </div>\n  );\n}\n"],"names":[],"mappings":";;;;;AAEA;AAFA;;;AAKe,SAAS;IACtB,qBACE,4PAAC;QAAI,WAAU;kBACb,cAAA,4PAAC,uMAAI;;;;;;;;;;AAGX;KANwB","debugId":null}}]
+}

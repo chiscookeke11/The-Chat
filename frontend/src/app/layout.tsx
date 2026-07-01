@@ -42,7 +42,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${agrandir.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${agrandir.variable} antialiased relative`}
       >
         <LenisProvider>
           <Navbar />

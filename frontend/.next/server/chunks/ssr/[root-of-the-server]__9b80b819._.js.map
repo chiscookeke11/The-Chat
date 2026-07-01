@@ -1,0 +1,8 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 3, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
+    {"offset": {"line": 19, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/USER/Desktop/my-learning/theChat/thechat/frontend/src/components/Hero.tsx"],"sourcesContent":["\r\n\r\n\r\n\r\nexport default function Hero() {\r\n    return (\r\n        <section className=\"w-full h-screen flex items-center justify-center pt-20 text-white \" >\r\n\r\n\r\n            <h1>Microphone Media</h1>\r\n\r\n        </section>\r\n    )\r\n}"],"names":[],"mappings":";;;;;;AAIe,SAAS;IACpB,qBACI,6SAAC;QAAQ,WAAU;kBAGf,cAAA,6SAAC;sBAAG;;;;;;;;;;;AAIhB","debugId":null}},
+    {"offset": {"line": 45, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/USER/Desktop/my-learning/theChat/thechat/frontend/src/app/page.tsx"],"sourcesContent":["// \"use client\"\n\nimport Hero from \"@/components/Hero\";\n\n\nexport default function Home() {\n  return (\n    <div className=\"w-full h-[1000vh] \" >\n      <Hero />\n    </div>\n  );\n}\n"],"names":[],"mappings":"AAAA,eAAe;;;;;;AAEf;;;AAGe,SAAS;IACtB,qBACE,6SAAC;QAAI,WAAU;kBACb,cAAA,6SAAC,oMAAI;;;;;;;;;;AAGX","debugId":null}}]
+}

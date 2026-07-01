@@ -485,7 +485,7 @@ function init(options = {}) {
     const opts = {
         defaultIntegrations: customDefaultIntegrations,
         environment: options.environment || process.env.SENTRY_ENVIRONMENT,
-        release: ("TURBOPACK compile-time value", "492c8596b9e3f2884360316e89fe23b7a9a4150e") || globalWithInjectedValues._sentryRelease,
+        release: ("TURBOPACK compile-time value", "72a6590878246985024363f48376854741aecb90") || globalWithInjectedValues._sentryRelease,
         ...options,
         // Override runtime to 'cloudflare' when running on OpenNext/Cloudflare
         ...isRunningOnCloudflare && {

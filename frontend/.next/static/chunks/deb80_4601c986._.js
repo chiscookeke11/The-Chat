@@ -1178,7 +1178,7 @@ function init(options) {
     const opts = {
         environment: options.environment || __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f$theChat$2f$thechat$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].env.SENTRY_ENVIRONMENT || (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f$theChat$2f$thechat$2f$frontend$2f$node_modules$2f40$sentry$2f$nextjs$2f$build$2f$esm$2f$common$2f$getVercelEnv$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getVercelEnv"])(true) || ("TURBOPACK compile-time value", "development"),
         defaultIntegrations: getDefaultIntegrations(options),
-        release: ("TURBOPACK compile-time value", "492c8596b9e3f2884360316e89fe23b7a9a4150e") || globalWithInjectedValues._sentryRelease,
+        release: ("TURBOPACK compile-time value", "72a6590878246985024363f48376854741aecb90") || globalWithInjectedValues._sentryRelease,
         ...options
     };
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f$theChat$2f$thechat$2f$frontend$2f$node_modules$2f40$sentry$2f$nextjs$2f$build$2f$esm$2f$client$2f$tunnelRoute$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["applyTunnelRouteOption"])(opts);

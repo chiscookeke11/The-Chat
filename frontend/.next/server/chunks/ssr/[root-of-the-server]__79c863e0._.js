@@ -151,13 +151,18 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f
 var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f$theChat$2f$thechat$2f$frontend$2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/image.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f$theChat$2f$thechat$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/client/app-dir/link.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f$theChat$2f$thechat$2f$frontend$2f$data$2f$navbar_data$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/my-learning/theChat/thechat/frontend/data/navbar_data.ts [app-rsc] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f$theChat$2f$thechat$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/my-learning/theChat/thechat/frontend/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react.js [app-rsc] (ecmascript)");
+;
 ;
 ;
 ;
 ;
 function Navbar() {
+    const navRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f$theChat$2f$thechat$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["useRef"])(null);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f$theChat$2f$thechat$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["useEffect"])(()=>{});
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f$theChat$2f$thechat$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
-        className: "w-full flex items-center justify-between gap-10 px-[3%] md:px-[7%] py-3 ",
+        ref: navRef,
+        className: "w-full flex items-center justify-between gap-10 px-[6%]  lg:px-[7%] py-3   bg-amber-700 fixed  top-0 left-0  ",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f$theChat$2f$thechat$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f$theChat$2f$thechat$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                 href: "/",
@@ -166,43 +171,66 @@ function Navbar() {
                     alt: "logo",
                     width: 1000,
                     height: 1000,
-                    className: "w-25 md:w-42.5 "
+                    className: "w-30 md:w-42.5 "
                 }, void 0, false, {
                     fileName: "[project]/Desktop/my-learning/theChat/thechat/frontend/src/components/Navbar.tsx",
-                    lineNumber: 13,
+                    lineNumber: 27,
                     columnNumber: 17
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/Desktop/my-learning/theChat/thechat/frontend/src/components/Navbar.tsx",
-                lineNumber: 12,
+                lineNumber: 26,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f$theChat$2f$thechat$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
-                className: "w-fit flex items-center gap-15 font-agrandir ",
+                className: "w-fit items-center gap-15 font-agrandir hidden md:flex ",
                 children: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f$theChat$2f$thechat$2f$frontend$2f$data$2f$navbar_data$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["navbar_data"].map((link, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f$theChat$2f$thechat$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                        className: " text-2xl md:text-[32px] tracking-wide text-white hover:text-[#b3a8ff]  *:   transition-all ease-in-out duration-300   ",
+                        className: " text-2xl  lg:text-[32px] tracking-wide text-white hover:text-[#b3a8ff]  *:   transition-all ease-in-out duration-300   ",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f$theChat$2f$thechat$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f$theChat$2f$thechat$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                             href: link.path,
                             children: link.label
                         }, void 0, false, {
                             fileName: "[project]/Desktop/my-learning/theChat/thechat/frontend/src/components/Navbar.tsx",
-                            lineNumber: 26,
+                            lineNumber: 40,
                             columnNumber: 25
                         }, this)
                     }, i, false, {
                         fileName: "[project]/Desktop/my-learning/theChat/thechat/frontend/src/components/Navbar.tsx",
-                        lineNumber: 23,
+                        lineNumber: 37,
                         columnNumber: 21
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/Desktop/my-learning/theChat/thechat/frontend/src/components/Navbar.tsx",
-                lineNumber: 21,
+                lineNumber: 35,
+                columnNumber: 13
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f$theChat$2f$thechat$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                className: "flex flex-col gap-2 md:hidden block ",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f$theChat$2f$thechat$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                        className: " w-9 h-0.75 bg-white block  "
+                    }, void 0, false, {
+                        fileName: "[project]/Desktop/my-learning/theChat/thechat/frontend/src/components/Navbar.tsx",
+                        lineNumber: 51,
+                        columnNumber: 17
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f$theChat$2f$thechat$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                        className: " w-9 h-0.75 bg-white block  "
+                    }, void 0, false, {
+                        fileName: "[project]/Desktop/my-learning/theChat/thechat/frontend/src/components/Navbar.tsx",
+                        lineNumber: 52,
+                        columnNumber: 17
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/Desktop/my-learning/theChat/thechat/frontend/src/components/Navbar.tsx",
+                lineNumber: 50,
                 columnNumber: 13
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/Desktop/my-learning/theChat/thechat/frontend/src/components/Navbar.tsx",
-        lineNumber: 10,
+        lineNumber: 21,
         columnNumber: 9
     }, this);
 }
@@ -275,7 +303,7 @@ function RootLayout({ children }) {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f$theChat$2f$thechat$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("html", {
         lang: "en",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f$theChat$2f$thechat$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("body", {
-            className: `${__TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$geist_a71539c9$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"].variable} ${__TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$geist_mono_8d43a2aa$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"].variable} ${__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f$theChat$2f$thechat$2f$frontend$2f$src$2f$app$2f$agrandir_49aa7700$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"].variable} antialiased`,
+            className: `${__TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$geist_a71539c9$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"].variable} ${__TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$geist_mono_8d43a2aa$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"].variable} ${__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f$theChat$2f$thechat$2f$frontend$2f$src$2f$app$2f$agrandir_49aa7700$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"].variable} antialiased relative`,
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f$theChat$2f$thechat$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f$theChat$2f$thechat$2f$frontend$2f$src$2f$providers$2f$LenisProvider$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                     children: [

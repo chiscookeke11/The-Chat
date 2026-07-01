@@ -14,7 +14,7 @@ function Home() {
         className: "w-full h-[1000vh] "
     }, void 0, false, {
         fileName: "[project]/Desktop/my-learning/theChat/thechat/frontend/src/app/page.tsx",
-        lineNumber: 7,
+        lineNumber: 6,
         columnNumber: 5
     }, this);
 }
