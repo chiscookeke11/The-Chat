@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/USER/Desktop/my-learning/theChat/thechat/frontend/src/providers/LenisProvider.tsx"],"sourcesContent":["\"use client\";\r\n\r\nimport Lenis from \"lenis\";\r\nimport { useEffect } from \"react\";\r\n\r\nexport default function LenisProvider({\r\n    children,\r\n}: {\r\n    children: React.ReactNode;\r\n}) {\r\n    useEffect(() => {\r\n        const lenis = new Lenis({\r\n            duration: 0.8,\r\n            smoothWheel: true,\r\n        });\r\n\r\n        function raf(time: number) {\r\n            lenis.raf(time);\r\n            requestAnimationFrame(raf);\r\n        }\r\n\r\n        requestAnimationFrame(raf);\r\n\r\n        return () => {\r\n            lenis.destroy();\r\n        };\r\n    }, []);\r\n\r\n    return <>{children}</>;\r\n}"],"names":[],"mappings":";;;;;AAEA;AACA;;;AAHA;;;AAKe,SAAS,cAAc,KAIrC;QAJqC,EAClC,QAAQ,EAGX,GAJqC;;IAKlC,IAAA,yOAAS;mCAAC;YACN,MAAM,QAAQ,IAAI,oNAAK,CAAC;gBACpB,UAAU;gBACV,aAAa;YACjB;YAEA,SAAS,IAAI,IAAY;gBACrB,MAAM,GAAG,CAAC;gBACV,sBAAsB;YAC1B;YAEA,sBAAsB;YAEtB;2CAAO;oBACH,MAAM,OAAO;gBACjB;;QACJ;kCAAG,EAAE;IAEL,qBAAO;kBAAG;;AACd;GAxBwB;KAAA","debugId":null}}]
+}

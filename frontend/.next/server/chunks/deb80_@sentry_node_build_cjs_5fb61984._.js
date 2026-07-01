@@ -646,6 +646,7 @@ exports.splitTwoLevels = splitTwoLevels; //# sourceMappingURL=utils.js.map
 globalThis["__SENTRY_SERVER_MODULES__"] = {
     "@sentry/nextjs": "^10.62.0",
     "axios": "^1.18.1",
+    "lenis": "^1.3.25",
     "next": "15.5.7",
     "react": "19.1.0",
     "react-dom": "19.1.0",
@@ -1042,6 +1043,7 @@ exports.setupExpressErrorHandler = setupExpressErrorHandler; //# sourceMappingUR
 globalThis["__SENTRY_SERVER_MODULES__"] = {
     "@sentry/nextjs": "^10.62.0",
     "axios": "^1.18.1",
+    "lenis": "^1.3.25",
     "next": "15.5.7",
     "react": "19.1.0",
     "react-dom": "19.1.0",
@@ -1554,6 +1556,7 @@ exports.startSpan = startSpan; //# sourceMappingURL=utils.js.map
 globalThis["__SENTRY_SERVER_MODULES__"] = {
     "@sentry/nextjs": "^10.62.0",
     "axios": "^1.18.1",
+    "lenis": "^1.3.25",
     "next": "15.5.7",
     "react": "19.1.0",
     "react-dom": "19.1.0",
@@ -2325,6 +2328,7 @@ exports.wrapFields = wrapFields; //# sourceMappingURL=utils.js.map
 globalThis["__SENTRY_SERVER_MODULES__"] = {
     "@sentry/nextjs": "^10.62.0",
     "axios": "^1.18.1",
+    "lenis": "^1.3.25",
     "next": "15.5.7",
     "react": "19.1.0",
     "react-dom": "19.1.0",
@@ -2834,6 +2838,7 @@ exports.startProducerSpan = startProducerSpan; //# sourceMappingURL=utils.js.map
 globalThis["__SENTRY_SERVER_MODULES__"] = {
     "@sentry/nextjs": "^10.62.0",
     "axios": "^1.18.1",
+    "lenis": "^1.3.25",
     "next": "15.5.7",
     "react": "19.1.0",
     "react-dom": "19.1.0",
@@ -3130,6 +3135,7 @@ exports.kafkaIntegration = kafkaIntegration; //# sourceMappingURL=index.js.map
 globalThis["__SENTRY_SERVER_MODULES__"] = {
     "@sentry/nextjs": "^10.62.0",
     "axios": "^1.18.1",
+    "lenis": "^1.3.25",
     "next": "15.5.7",
     "react": "19.1.0",
     "react-dom": "19.1.0",
@@ -3566,6 +3572,7 @@ exports.getV4PatchCommandPromise = getV4PatchCommandPromise; //# sourceMappingUR
 globalThis["__SENTRY_SERVER_MODULES__"] = {
     "@sentry/nextjs": "^10.62.0",
     "axios": "^1.18.1",
+    "lenis": "^1.3.25",
     "next": "15.5.7",
     "react": "19.1.0",
     "react-dom": "19.1.0",
@@ -4180,6 +4187,7 @@ exports.getSpanName = getSpanName; //# sourceMappingURL=utils.js.map
 globalThis["__SENTRY_SERVER_MODULES__"] = {
     "@sentry/nextjs": "^10.62.0",
     "axios": "^1.18.1",
+    "lenis": "^1.3.25",
     "next": "15.5.7",
     "react": "19.1.0",
     "react-dom": "19.1.0",
@@ -4620,6 +4628,7 @@ exports.once = once; //# sourceMappingURL=utils.js.map
 globalThis["__SENTRY_SERVER_MODULES__"] = {
     "@sentry/nextjs": "^10.62.0",
     "axios": "^1.18.1",
+    "lenis": "^1.3.25",
     "next": "15.5.7",
     "react": "19.1.0",
     "react-dom": "19.1.0",
@@ -5821,6 +5830,7 @@ exports.shouldSkipInstrumentation = shouldSkipInstrumentation; //# sourceMapping
 globalThis["__SENTRY_SERVER_MODULES__"] = {
     "@sentry/nextjs": "^10.62.0",
     "axios": "^1.18.1",
+    "lenis": "^1.3.25",
     "next": "15.5.7",
     "react": "19.1.0",
     "react-dom": "19.1.0",
@@ -6509,6 +6519,7 @@ exports.VERSION = VERSION; //# sourceMappingURL=constants.js.map
 globalThis["__SENTRY_SERVER_MODULES__"] = {
     "@sentry/nextjs": "^10.62.0",
     "axios": "^1.18.1",
+    "lenis": "^1.3.25",
     "next": "15.5.7",
     "react": "19.1.0",
     "react-dom": "19.1.0",
@@ -6836,6 +6847,7 @@ exports.isPatchableExtMethod = isPatchableExtMethod; //# sourceMappingURL=utils.
 globalThis["__SENTRY_SERVER_MODULES__"] = {
     "@sentry/nextjs": "^10.62.0",
     "axios": "^1.18.1",
+    "lenis": "^1.3.25",
     "next": "15.5.7",
     "react": "19.1.0",
     "react-dom": "19.1.0",
@@ -7203,6 +7215,7 @@ exports.HonoTypes = HonoTypes; //# sourceMappingURL=constants.js.map
 globalThis["__SENTRY_SERVER_MODULES__"] = {
     "@sentry/nextjs": "^10.62.0",
     "axios": "^1.18.1",
+    "lenis": "^1.3.25",
     "next": "15.5.7",
     "react": "19.1.0",
     "react-dom": "19.1.0",
@@ -7579,6 +7592,7 @@ exports.kLayerPatched = kLayerPatched; //# sourceMappingURL=internal-types.js.ma
 globalThis["__SENTRY_SERVER_MODULES__"] = {
     "@sentry/nextjs": "^10.62.0",
     "axios": "^1.18.1",
+    "lenis": "^1.3.25",
     "next": "15.5.7",
     "react": "19.1.0",
     "react-dom": "19.1.0",
@@ -7835,6 +7849,7 @@ exports.replaceCurrentStackRoute = replaceCurrentStackRoute; //# sourceMappingUR
 globalThis["__SENTRY_SERVER_MODULES__"] = {
     "@sentry/nextjs": "^10.62.0",
     "axios": "^1.18.1",
+    "lenis": "^1.3.25",
     "next": "15.5.7",
     "react": "19.1.0",
     "react-dom": "19.1.0",
@@ -8178,6 +8193,7 @@ exports.mapSystem = mapSystem; //# sourceMappingURL=utils.js.map
 globalThis["__SENTRY_SERVER_MODULES__"] = {
     "@sentry/nextjs": "^10.62.0",
     "axios": "^1.18.1",
+    "lenis": "^1.3.25",
     "next": "15.5.7",
     "react": "19.1.0",
     "react-dom": "19.1.0",
@@ -8399,6 +8415,7 @@ exports.once = once; //# sourceMappingURL=utils.js.map
 globalThis["__SENTRY_SERVER_MODULES__"] = {
     "@sentry/nextjs": "^10.62.0",
     "axios": "^1.18.1",
+    "lenis": "^1.3.25",
     "next": "15.5.7",
     "react": "19.1.0",
     "react-dom": "19.1.0",
@@ -8608,6 +8625,7 @@ exports.tediousIntegration = tediousIntegration; //# sourceMappingURL=index.js.m
 globalThis["__SENTRY_SERVER_MODULES__"] = {
     "@sentry/nextjs": "^10.62.0",
     "axios": "^1.18.1",
+    "lenis": "^1.3.25",
     "next": "15.5.7",
     "react": "19.1.0",
     "react-dom": "19.1.0",
@@ -8770,6 +8788,7 @@ exports.instrumentGenericPool = instrumentGenericPool; //# sourceMappingURL=inde
 globalThis["__SENTRY_SERVER_MODULES__"] = {
     "@sentry/nextjs": "^10.62.0",
     "axios": "^1.18.1",
+    "lenis": "^1.3.25",
     "next": "15.5.7",
     "react": "19.1.0",
     "react-dom": "19.1.0",
@@ -9408,6 +9427,7 @@ exports.getPublishPatch = getPublishPatch; //# sourceMappingURL=patches.js.map
 globalThis["__SENTRY_SERVER_MODULES__"] = {
     "@sentry/nextjs": "^10.62.0",
     "axios": "^1.18.1",
+    "lenis": "^1.3.25",
     "next": "15.5.7",
     "react": "19.1.0",
     "react-dom": "19.1.0",
@@ -9572,6 +9592,7 @@ exports.INTEGRATION_NAME = INTEGRATION_NAME; //# sourceMappingURL=constants.js.m
 globalThis["__SENTRY_SERVER_MODULES__"] = {
     "@sentry/nextjs": "^10.62.0",
     "axios": "^1.18.1",
+    "lenis": "^1.3.25",
     "next": "15.5.7",
     "react": "19.1.0",
     "react-dom": "19.1.0",
@@ -9810,6 +9831,7 @@ exports.vercelAIIntegration = vercelAIIntegration; //# sourceMappingURL=index.js
 globalThis["__SENTRY_SERVER_MODULES__"] = {
     "@sentry/nextjs": "^10.62.0",
     "axios": "^1.18.1",
+    "lenis": "^1.3.25",
     "next": "15.5.7",
     "react": "19.1.0",
     "react-dom": "19.1.0",
@@ -9944,6 +9966,7 @@ exports.openAIIntegration = openAIIntegration; //# sourceMappingURL=index.js.map
 globalThis["__SENTRY_SERVER_MODULES__"] = {
     "@sentry/nextjs": "^10.62.0",
     "axios": "^1.18.1",
+    "lenis": "^1.3.25",
     "next": "15.5.7",
     "react": "19.1.0",
     "react-dom": "19.1.0",
@@ -10068,6 +10091,7 @@ exports.instrumentAnthropicAi = instrumentAnthropicAi; //# sourceMappingURL=inde
 globalThis["__SENTRY_SERVER_MODULES__"] = {
     "@sentry/nextjs": "^10.62.0",
     "axios": "^1.18.1",
+    "lenis": "^1.3.25",
     "next": "15.5.7",
     "react": "19.1.0",
     "react-dom": "19.1.0",
@@ -10180,6 +10204,7 @@ exports.instrumentGoogleGenAI = instrumentGoogleGenAI; //# sourceMappingURL=inde
 globalThis["__SENTRY_SERVER_MODULES__"] = {
     "@sentry/nextjs": "^10.62.0",
     "axios": "^1.18.1",
+    "lenis": "^1.3.25",
     "next": "15.5.7",
     "react": "19.1.0",
     "react-dom": "19.1.0",
@@ -10365,6 +10390,7 @@ exports.langChainIntegration = langChainIntegration; //# sourceMappingURL=index.
 globalThis["__SENTRY_SERVER_MODULES__"] = {
     "@sentry/nextjs": "^10.62.0",
     "axios": "^1.18.1",
+    "lenis": "^1.3.25",
     "next": "15.5.7",
     "react": "19.1.0",
     "react-dom": "19.1.0",

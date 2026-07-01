@@ -1,7 +1,7 @@
 module.exports = [
 "[project]/Desktop/my-learning/theChat/thechat/frontend/src/app/favicon.ico (static in ecmascript)", ((__turbopack_context__) => {
 
-__turbopack_context__.v("/_next/static/media/favicon.2b0e006f.ico");}),
+__turbopack_context__.v("/_next/static/media/favicon.06c02a85.ico");}),
 "[project]/Desktop/my-learning/theChat/thechat/frontend/src/app/favicon.ico.mjs { IMAGE => \"[project]/Desktop/my-learning/theChat/thechat/frontend/src/app/favicon.ico (static in ecmascript)\" } [app-rsc] (structured image object, ecmascript)", ((__turbopack_context__) => {
 "use strict";
 

@@ -2,5 +2,5 @@
   "version": 3,
   "sources": [],
   "sections": [
-    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/USER/Desktop/my-learning/theChat/thechat/frontend/src/app/page.tsx"],"sourcesContent":["\"use client\"\n\nimport Image from \"next/image\";\n\nexport default function Home() {\n  return (\n    <div className=\"w-full h-[1000vh] \" >\n      <h1 className=\"font-agrandir \" >Hello this is the chat podcast </h1>\n\n      <Image src={\"/logo/logo.png\"} alt=\"logo\" width={1000} height={1000} />\n    </div>\n  );\n}\n"],"names":[],"mappings":";;;;;AAEA;AAFA;;;AAIe,SAAS;IACtB,qBACE,6SAAC;QAAI,WAAU;;0BACb,6SAAC;gBAAG,WAAU;0BAAkB;;;;;;0BAEhC,6SAAC,uMAAK;gBAAC,KAAK;gBAAkB,KAAI;gBAAO,OAAO;gBAAM,QAAQ;;;;;;;;;;;;AAGpE","debugId":null}}]
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/USER/Desktop/my-learning/theChat/thechat/frontend/src/app/page.tsx"],"sourcesContent":["\"use client\"\n\nimport Image from \"next/image\";\n\nexport default function Home() {\n  return (\n    <div className=\"w-full h-[1000vh] \" >\n    </div>\n  );\n}\n"],"names":[],"mappings":";;;;;AAAA;;AAIe,SAAS;IACtB,qBACE,6SAAC;QAAI,WAAU;;;;;;AAGnB","debugId":null}}]
 }
