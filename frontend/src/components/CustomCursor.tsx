@@ -38,5 +38,5 @@ export default function CustomCursor() {
         };
     }, []);
 
-    return <div className="custom-cursor  md:block " ref={cursorRef} />;
+    return <div className="custom-cursor hidden  md:block " ref={cursorRef} />;
 }
