@@ -26,10 +26,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-body {
-  cursor: none;
-}
-
 /* Hide cursor on links too */
 a,
 button,
@@ -57,4 +53,15 @@ textarea {
   z-index: 999999;
 
   will-change: transform;
+}
+
+/* Only hide the cursor on devices with a fine pointer (mouse) */
+@media (hover: hover) and (pointer: fine) {
+  body,
+  a,
+  button,
+  input,
+  textarea {
+    cursor: none;
+  }
 }

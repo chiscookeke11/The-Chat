@@ -18,7 +18,7 @@ export default function Navbar() {
         const handleScroll = () => {
             const currentScrollY = window.scrollY;
 
-            // if scrolling down → hide
+            // if scrolling down  hide
             if (currentScrollY > lastScrollY && currentScrollY > 200) {
                 setHidden(true);
             }
@@ -39,7 +39,7 @@ export default function Navbar() {
     // This hides the scrollbar if the mobile menu is open
     useEffect(() => {
         document.body.style.overflowY = showMenu ? "auto" : "hidden"
-    })
+    }, [showMenu])
 
 
 

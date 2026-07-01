@@ -211,6 +211,7 @@ globalThis["__SENTRY_SERVER_MODULES__"] = {
     "@sentry/nextjs": "^10.62.0",
     "axios": "^1.18.1",
     "lenis": "^1.3.25",
+    "lucide-react": "^1.23.0",
     "next": "15.5.7",
     "react": "19.1.0",
     "react-dom": "19.1.0",
