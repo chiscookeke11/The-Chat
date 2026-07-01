@@ -130,7 +130,7 @@ function Navbar() {
     ]);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f$theChat$2f$thechat$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
         ref: navRef,
-        className: "\n                w-full flex items-center justify-between gap-10 px-[6%] lg:px-[7%] py-3\n                fixed top-0 left-0 bg-[#000000]\n                transition-transform duration-300 ease-in-out\n                ".concat(hidden ? "-translate-y-full" : "translate-y-0", "\n            "),
+        className: "\n                w-full flex items-center justify-between gap-10 px-[6%] lg:px-[7%] py-3\n                fixed top-0 left-0 bg-[#000000] z-50\n                transition-transform duration-300 ease-in-out\n                ".concat(hidden ? "-translate-y-full" : "translate-y-0", "\n            "),
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f$theChat$2f$thechat$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f$theChat$2f$thechat$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                 href: "/",
@@ -152,7 +152,7 @@ function Navbar() {
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f$theChat$2f$thechat$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
-                className: "w-fit items-center gap-15 font-agrandir hidden md:flex",
+                className: "w-fit items-center gap-15 font-agrandir hidden md:flex z-50",
                 children: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f$theChat$2f$thechat$2f$frontend$2f$data$2f$navbar_data$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["navbar_data"].map((link, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f$theChat$2f$thechat$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                         className: "text-2xl lg:text-[32px] tracking-wide text-white hover:text-[#b3a8ff] transition-all duration-300",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f$theChat$2f$thechat$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f$theChat$2f$thechat$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -175,7 +175,7 @@ function Navbar() {
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f$theChat$2f$thechat$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                 onClick: ()=>setShowMenu((prev)=>!prev),
-                className: "flex flex-col gap-2 md:hidden z-10 ",
+                className: "flex flex-col gap-2 md:hidden z-50 ",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f$theChat$2f$thechat$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                         className: "w-9 h-0.75\n                    ".concat(showMenu ? "bg-[#000000]" : "bg-white", "\n                    block transform transition-all duration-200 ease-in-out\n                    ").concat(showMenu ? "rotate-45 translate-y-1.5 " : " rotate-0 translate-y-0 ")
@@ -215,22 +215,22 @@ function Navbar() {
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Desktop/my-learning/theChat/thechat/frontend/src/components/Navbar.tsx",
-                                lineNumber: 122,
+                                lineNumber: 120,
                                 columnNumber: 29
                             }, this)
                         }, i, false, {
                             fileName: "[project]/Desktop/my-learning/theChat/thechat/frontend/src/components/Navbar.tsx",
-                            lineNumber: 110,
+                            lineNumber: 108,
                             columnNumber: 25
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/Desktop/my-learning/theChat/thechat/frontend/src/components/Navbar.tsx",
-                    lineNumber: 108,
+                    lineNumber: 106,
                     columnNumber: 17
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/Desktop/my-learning/theChat/thechat/frontend/src/components/Navbar.tsx",
-                lineNumber: 101,
+                lineNumber: 99,
                 columnNumber: 13
             }, this)
         ]
@@ -296,7 +296,7 @@ function CustomCursor() {
         }
     }["CustomCursor.useEffect"], []);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$my$2d$learning$2f$theChat$2f$thechat$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "custom-cursor ",
+        className: "custom-cursor hidden  md:block ",
         ref: cursorRef
     }, void 0, false, {
         fileName: "[project]/Desktop/my-learning/theChat/thechat/frontend/src/components/CustomCursor.tsx",

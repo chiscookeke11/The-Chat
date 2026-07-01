@@ -49,7 +49,7 @@ export default function Navbar() {
             ref={navRef}
             className={`
                 w-full flex items-center justify-between gap-10 px-[6%] lg:px-[7%] py-3
-                fixed top-0 left-0 bg-[#000000]
+                fixed top-0 left-0 bg-[#000000] z-50
                 transition-transform duration-300 ease-in-out
                 ${hidden ? "-translate-y-full" : "translate-y-0"}
             `}
@@ -64,7 +64,7 @@ export default function Navbar() {
                 />
             </Link>
 
-            <ul className="w-fit items-center gap-15 font-agrandir hidden md:flex">
+            <ul className="w-fit items-center gap-15 font-agrandir hidden md:flex z-50">
                 {navbar_data.map((link, i) => (
                     <li
                         key={i}
@@ -80,7 +80,7 @@ export default function Navbar() {
             {/* Menu button */}
             <button
                 onClick={() => setShowMenu((prev) => !prev)}
-                className="flex flex-col gap-2 md:hidden z-10 ">
+                className="flex flex-col gap-2 md:hidden z-50 ">
                 <span className={`w-9 h-0.75
                     ${showMenu ? "bg-[#000000]" : "bg-white"}
                     block transform transition-all duration-200 ease-in-out
@@ -92,8 +92,6 @@ export default function Navbar() {
                     block transform transition-all duration-200 ease-in-out
                     ${showMenu ? "-rotate-45 -translate-y-1.5" : "rotate-0 translate-y-0"} `} />
             </button>
-
-
 
 
 

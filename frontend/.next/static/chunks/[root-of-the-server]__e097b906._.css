@@ -224,6 +224,7 @@
 
 @layer theme {
   :root, :host {
+    --color-amber-600: #dd7400;
     --color-black: #000;
     --color-white: #fff;
     --spacing: .25rem;
@@ -244,6 +245,18 @@
     --default-font-family: var(--font-geist-sans);
     --default-mono-font-family: var(--font-geist-mono);
     --font-agrandir: var(--font-agrandir);
+  }
+
+  @supports (color: color(display-p3 0 0 0)) {
+    :root, :host {
+      --color-amber-600: color(display-p3 .827144 .467166 .0336006);
+    }
+  }
+
+  @supports (color: lab(0% 0 0)) {
+    :root, :host {
+      --color-amber-600: lab(60.3514% 40.5624 87.1228);
+    }
   }
 }
 
@@ -595,6 +608,14 @@
 @layer components;
 
 @layer utilities {
+  .pointer-events-auto {
+    pointer-events: auto;
+  }
+
+  .pointer-events-none {
+    pointer-events: none;
+  }
+
   .absolute {
     position: absolute;
   }
@@ -633,6 +654,10 @@
 
   .z-20 {
     z-index: 20;
+  }
+
+  .z-50 {
+    z-index: 50;
   }
 
   .block {
@@ -807,6 +832,10 @@
     background-color: #b3a8ff;
   }
 
+  .bg-amber-600 {
+    background-color: var(--color-amber-600);
+  }
+
   .bg-transparent {
     background-color: rgba(0, 0, 0, 0);
   }
@@ -968,6 +997,12 @@
   @media (min-width: 48rem) {
     .md\:right-\[-10\%\] {
       right: -10%;
+    }
+  }
+
+  @media (min-width: 48rem) {
+    .md\:block {
+      display: block;
     }
   }
 
