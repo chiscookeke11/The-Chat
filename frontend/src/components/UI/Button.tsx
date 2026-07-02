@@ -19,7 +19,7 @@ export default function Button({ children, ...props }: buttonProps) {
   hover:text-black
   transition-all duration-200 ease-in-out
   bg-transparent
-  z-10
+  z-50
   flex items-center gap-3
 "
             {...props}>

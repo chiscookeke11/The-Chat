@@ -2063,7 +2063,7 @@ function init(options) {
     const cloudflareConfig = getCloudflareRuntimeConfig();
     const opts = {
         environment: options.environment || process.env.SENTRY_ENVIRONMENT || getVercelEnv.getVercelEnv(false) || ("TURBOPACK compile-time value", "development"),
-        release: ("TURBOPACK compile-time value", "78f69e1c7d1416d5e811cee4a365e7d86a1ff205") || globalWithInjectedValues._sentryRelease,
+        release: ("TURBOPACK compile-time value", "98939d5bacb58465cb9cdda7d8fdb016f2a51e30") || globalWithInjectedValues._sentryRelease,
         defaultIntegrations: customDefaultIntegrations,
         ...options,
         // Override runtime to 'cloudflare' when running on OpenNext/Cloudflare
